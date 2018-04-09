@@ -1,3 +1,4 @@
+
 let myApp = angular.module('myApp', ['ngRoute', '720kb.tooltips', 'ngAlertify']);
 
 myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider, tooltipsConfProvider) {

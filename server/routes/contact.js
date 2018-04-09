@@ -7,10 +7,7 @@ const smtpTransport = require('nodemailer-smtp-transport');
 
 router.post('/sendcomment', function(req, res){
   let comment = req.body;
-  let html = '<span><h2> First Name: </h2><h3>' + comment.firstName + '</h3></span>' +
-             '<span><h2> Last Name: </h2><h3>' + comment.lastName + '</h3></span>' +
-             '<span><h2> Email: </h2><h3>' + comment.email + '</h3></span>' +
-             '<span><h2> Comments: </h2><p>' + comment.comment + '</p></span>';
+  let html_message = '<h1> this worked </h1>';
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
@@ -22,10 +19,10 @@ router.post('/sendcomment', function(req, res){
     });
     // setup email data with unicode symbols
     let mailOptions = {
-      from: '"Annas Bannas New Enrollment App" <'+process.env.ACCOUNT_NAME+'>', // sender address
+      from: '"Web Store" <'+process.env.ACCOUNT_NAME+'>', // sender address
       to: process.env.ACCOUNT_RECIEVING_EMAIL,
-      subject: 'Comment by: ' + comment.firstName + ' ' + comment.lastName, // Subject line
-      html: html
+      subject: 'Subject test', // Subject line
+      html: html_message
     };
     // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {

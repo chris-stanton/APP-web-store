@@ -1,0 +1,24 @@
+{
+  "name": "web-store",
+  "version": "1.0.0",
+  "description": "fishing rods and parts web store",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "nodemon app.js"
+  },
+  "dependencies": {
+    "alertify.js": "1.0.12",
+    "angular": "1.6.3",
+    "angular-route": "1.6.3",
+    "angular-tooltips": "1.2.2",
+    "body-parser": "1.17.1",
+    "dotenv": "5.0.1",
+    "express": "4.15.2",
+    "nodemailer": "4.4.2",
+    "nodemailer-smtp-transport": "2.7.4",
+    "pg": "6.1.4"
+  },
+  "author": "Christopher J Stanton",
+  "license": "MIT"
+}

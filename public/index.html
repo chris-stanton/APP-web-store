@@ -1,0 +1,33 @@
+
+<!-- Copyright (c) 2018 Christopher J. Stanton -->
+
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Chris Stanton Fishing Rods Store</title>
+        <script type="text/javascript" src="./assets/vendors/angular.min.js"></script>
+        <script type="text/javascript" src="./assets/vendors/angular-route.min.js"></script>
+        <script type="text/javascript" src="./assets/vendors/angular-tooltips.min.js"></script>
+        <script type="text/javascript" src="./assets/vendors/ngAlertify.js"></script>
+        <script type="text/javascript" src="./scripts/client.js"></script>
+        <script type="text/javascript" src="./scripts/controllers/landing.controller.js"></script>
+        <script type="text/javascript" src="./scripts/factories/email.factory.js"></script>
+          <link rel="icon" type="image/ico" href="./assets/images/icons/website-white.ico"/>
+          <link rel="stylesheet" href="./styles/desktop-styles.css"/>
+          <link rel="stylesheet" href="./styles/mobile-styles.css"/>
+          <link rel="stylesheet" href="./styles/templates/partials/header.css"/>
+          <link rel="stylesheet" href="./styles/templates/partials/footer.css"/>
+          <link rel="stylesheet" href="./styles/templates/tooltips/locations-tooltip.css"/>
+          <link rel="stylesheet" href="./assets/vendors/angular-tooltips.min.css"/>
+  </head>
+  <body>
+    <header ng-include="'./views/templates/partials/header.html'"></header>
+    <main ng-view>
+      <!-- DOM changes happen here -->
+    </main>
+    <footer ng-include="'./views/templates/partials/footer.html'"></footer>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+
+.locations-tooltip-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.locations-tooltip-container span {
+  margin: 5px 0px;
+}
+.locations-tooltip-container h4 {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.locations-tooltip-container h6 {
+  font-size: 12px;
+}

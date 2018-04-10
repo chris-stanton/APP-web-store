@@ -1,0 +1,28 @@
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  background-color: #1d1a1a;
+}
+.flex-nav-pages {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+}
+.flex-nav-pages a {
+  text-decoration: none;
+  padding: 20px;
+  color: #ffffff;
+}
+.flex-nav-pages a:hover {
+  text-shadow: 1px 4px 6px #00c2ff;
+}
+.flex-nav-resources {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+.flex-nav-resources img {
+  height: 10vh;
+}

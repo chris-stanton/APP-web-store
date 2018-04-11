@@ -11,7 +11,7 @@
 }
 .flex-navmain-container {
   display: flex;
-  flex: 2;
+  flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;

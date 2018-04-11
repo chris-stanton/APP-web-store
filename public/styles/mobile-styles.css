@@ -1,14 +1,18 @@
 
 @media(max-width: 850px) {
 
-  .flex-navmain-container {
-
+  /* /////////////// */
+  /*   USER NAV BAR  */
+  /* /////////////// */
+  .flex-user-nav .flex-navmain-container {
     flex-direction: column;
   }
-  .flex-navmain-container a {
-
-    padding: 5px;
-  
+  .flex-user-nav .flex-navmain-container a {
+    width: 40%;
+    padding: 8px;
+  }
+  .flex-navlanding-container {
+    flex: 4;
   }
 
 

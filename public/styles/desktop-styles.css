@@ -28,11 +28,13 @@ body {
 }
 .flex-warranty-container h1 {
   font-size: 38px;
+  text-shadow: 2px 2px 2px #8b8b8b;
   padding: 10px 0px;
 }
 .flex-warranty-container p {
   width: 70vw;
   font-size: 18px;
+  text-shadow: 1px 1px 1px #8b8b8b;
 }
 .flex-warranty-container h3 {
   margin-top: 30px;

@@ -10,10 +10,12 @@
   overflow: scroll;
 }
 .flex-user-nav a {
+  display: flex;
   text-decoration: none;
-  margin: 20px;
+  padding: 20px;
   color: #ffffff;
 }
 .flex-user-nav a:hover {
-  text-shadow: 1px 4px 6px #00c2ff;
+  background-color: #00c2ff;
+  color: #000000;
 }

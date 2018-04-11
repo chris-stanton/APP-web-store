@@ -11,6 +11,9 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
       controller: 'LandingController',
       controllerAs: 'lc'
     })
+    .when ('/warranty', {
+      templateUrl: './views/warranty.html',
+    })
     .when ('/resources', {
       templateUrl: './views/resources.html',
     })

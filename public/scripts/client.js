@@ -23,7 +23,7 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
 
   // angular-tooltips global config options
   tooltipsConfProvider.configure({
-    'smart': true,
+    'smart': false,
     'side': 'top',
     'size': 'small',
     'speed': 'slow',

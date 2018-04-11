@@ -9,13 +9,33 @@
   background-color: #1d1a1a;
   overflow: scroll;
 }
-.flex-user-nav a {
+.flex-navmain-container {
   display: flex;
+  flex: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+}
+.flex-navmain-container a {
+  text-decoration: none;
+  padding: 15px;
+  color: #ffffff;
+}
+.flex-navmain-container a:hover {
+  background-color: #00c2ff;
+  color: #000000;
+}
+.flex-navlanding-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.flex-navlanding-container a {
   text-decoration: none;
   padding: 20px;
   color: #ffffff;
-}
-.flex-user-nav a:hover {
-  background-color: #00c2ff;
-  color: #000000;
 }

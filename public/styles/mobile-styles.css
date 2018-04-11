@@ -16,6 +16,10 @@
     flex: 3;
     align-items: center;
   }
+  .flex-landingGallary-container img{
+    height: 20vh;
+  }
+
 
 
 

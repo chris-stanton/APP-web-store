@@ -25,21 +25,38 @@ body {
 .flex-landing-container .flex-landingHeader-container {
   display: flex;
   flex-direction: row;
+  height: 100vh;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  align-items: baseline;
   text-align: center;
+  color: #ffffff;
+  background-image: url('../assets/images/backgrounds/landing.jpg');
+  background-repeat: no-repeat;
+  image-orientation: 180deg;
+  background-size: cover;
 }
 .flex-landingHeader-container h1 {
   font-size: 50px;
-  padding: 10px;
+  margin: 180px 10px 0px 0px;
   font-family: copperplate;
 }
 .flex-landingHeader-container h4 {
   font-size: 30px;
   font-style: italic;
-  padding: 10px;
+  margin-top: 180px;
+}
+.flex-landingGallary-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 0px 50px 0px;
+  justify-content: center;
+}
+.flex-landingGallary-container img{
+  height: 40vh;
+  margin: 5px;
+  image-orientation: from-image;
 }
 
 

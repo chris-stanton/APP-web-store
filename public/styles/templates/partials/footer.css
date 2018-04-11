@@ -1,1 +1,13 @@
 
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #1d1a1a;
+  color: #ffffff;
+}
+footer h6 {
+  padding: 7px;
+}

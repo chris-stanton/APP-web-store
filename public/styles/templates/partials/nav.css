@@ -8,6 +8,7 @@
   width: 100vw;
   background-color: #1d1a1a;
   overflow: scroll;
+  border-bottom: 2px solid #00c2ff;
 }
 .flex-navmain-container {
   display: flex;

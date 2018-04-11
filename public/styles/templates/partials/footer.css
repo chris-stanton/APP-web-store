@@ -1,4 +1,7 @@
 
+/* //////////// */
+/*    FOOTER    */
+/* //////////// */
 footer {
   display: flex;
   flex-direction: row;
@@ -8,6 +11,23 @@ footer {
   background-color: #1d1a1a;
   color: #ffffff;
 }
-footer h6 {
-  padding: 7px;
+.footer-copyright-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+.footer-links-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+.footer-links-container img {
+  height: 4vh;
+  margin: 5px;
 }

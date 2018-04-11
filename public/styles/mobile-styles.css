@@ -1,12 +1,16 @@
 
 @media(max-width: 850px) {
 
-/* user nav bar */
+  /* ///////////// */
+  /* USER NAV BAR  */
+  /* ///////////// */
   .flex-user-nav a {
     margin: 0px;
   }
 
-/* resources  */
+  /* //////////// */
+  /*   RESOURCES  */
+  /* //////////// */
   .flex-resources-container {
     flex-direction: column;
     align-items: center;

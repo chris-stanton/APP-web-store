@@ -6,13 +6,15 @@
   /* /////////////// */
   .flex-user-nav .flex-navmain-container {
     flex-direction: column;
+    margin-left: 10px;
   }
   .flex-user-nav .flex-navmain-container a {
-    width: 40%;
-    padding: 8px;
+    width: 100%;
+    padding: 8px 0px;
   }
-  .flex-navlanding-container {
-    flex: 4;
+  .flex-user-nav .flex-navlanding-container {
+    flex: 3;
+    align-items: center;
   }
 
 

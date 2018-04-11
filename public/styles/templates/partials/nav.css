@@ -1,15 +1,19 @@
 
-nav {
+/* //////////// */
+/* user nav bar */
+/* //////////// */
+.flex-user-nav {
   display: flex;
   flex-direction: row;
   width: 100vw;
   background-color: #1d1a1a;
+  overflow: scroll;
 }
-a {
+.flex-user-nav a {
   text-decoration: none;
-  padding: 20px;
+  margin: 20px;
   color: #ffffff;
 }
-a:hover {
+.flex-user-nav a:hover {
   text-shadow: 1px 4px 6px #00c2ff;
 }

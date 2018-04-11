@@ -11,6 +11,9 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
       controller: 'LandingController',
       controllerAs: 'lc'
     })
+    .when ('/resources', {
+      templateUrl: './views/resources.html',
+    })
     .otherwise ( {
         redirectTo: '/landing'
     });

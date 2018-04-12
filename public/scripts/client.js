@@ -16,6 +16,9 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
       controller: 'ContactController',
       controllerAs: 'cc'
     })
+    .when ('/about', {
+      templateUrl: './views/about.html',
+    })
     .when ('/warranty', {
       templateUrl: './views/warranty.html',
     })

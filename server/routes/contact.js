@@ -12,7 +12,6 @@ router.post('/sendMessage', function(req, res){
                      '<span><h1>Email Address:</h1><h3>' + contactMessage.email + '</h3></span>' +
                      '<span><h1>Message:</h1><h3>' + contactMessage.message + '</h3></span>';
 
-
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     service: 'yahoo',

@@ -13,6 +13,18 @@ body {
   width: 100vw;
 }
 
+/* //////////////// */
+/*   INPUT ERROR    */
+/* BACKGROUND COLOR */
+/* //////////////// */
+.background-red {
+  background-color: rgba(255, 0, 0, 0.72);
+}
+.background-reset {
+  background-color: none;
+}
+
+
 
 /* //////////// */
 /*   LANDING    */
@@ -62,6 +74,65 @@ body {
   height: 40vh;
   margin: 5px;
   /* image-orientation: from-image; */
+}
+
+
+
+/* //////////// */
+/*   CONTACT    */
+/* //////////// */
+.flex-contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  margin: 15px 0px;
+}
+.flex-contact-container p {
+  font-size: 23px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #8b8b8b;
+  width: 80%;
+  margin: 20px;
+}
+.flex-contact-container span {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.flex-contact-container label {
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #8b8b8b;
+}
+.flex-contact-container input {
+  height: 5vh;
+  width: 70vw;
+}
+.flex-contact-container textarea {
+  height: 15vh;
+  width: 70vw;
+}
+/* submit button */
+ .button-active {
+  height: 7vh;
+  width: 70vw;
+  background-color: #0f5ce0;
+  color: #ffffff;
+  border-radius: 10px;
+  outline: none;
+  margin: 15px 0px 35px 0px;
+}
+ .button-inactive {
+  height: 7vh;
+  width: 70vw;
+  background-color: #87acff;
+  color: #ffffff;
+  border-radius: 10px;
+  outline: none;
+  margin: 15px 0px 35px 0px;
+}
+ .button-active:hover {
+  cursor: pointer;
 }
 
 
@@ -133,71 +204,4 @@ body {
   padding: 10px;
   text-shadow: 1px 1px 1px #8b8b8b;
   font-size: 19px;
-}
-
-
-
-
-
-
-
-
-/* //////////// */
-/*   CONTACT    */
-/* //////////// */
-.flex-contact-container {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  align-items: center;
-  margin: 15px 0px;
-}
-.flex-contact-container p {
-  font-size: 23px;
-  text-align: center;
-  text-shadow: 1px 1px 1px #8b8b8b;
-  width: 80%;
-  margin: 20px;
-}
-.flex-contact-container span {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0px;
-}
-.flex-contact-container label {
-  font-size: 20px;
-  text-shadow: 1px 1px 1px #8b8b8b;
-}
-.flex-contact-container input {
-  height: 5vh;
-  width: 70vw;
-}
-.flex-contact-container textarea {
-  height: 15vh;
-  width: 70vw;
-}
-
-
-
-/* submit button */
- .button-active {
-  height: 7vh;
-  width: 70vw;
-  background-color: #0f5ce0;
-  color: #ffffff;
-  border-radius: 10px;
-  outline: none;
-  margin: 15px 0px 35px 0px;
-}
- .button-inactive {
-  height: 7vh;
-  width: 70vw;
-  background-color: #87acff;
-  color: #ffffff;
-  border-radius: 10px;
-  outline: none;
-  margin: 15px 0px 35px 0px;
-}
- .button-active:hover {
-  cursor: pointer;
 }

@@ -1,7 +1,5 @@
 
-myApp.factory('EmailFactory',['$http', '$window', '$location', 'alertify',function($http, $window, $location, alertify) {
-
-  console.log('EmailFactory Running...');
+myApp.factory('EmailFactory',['$http', '$location', 'alertify',function($http, $location, alertify) {
 
   // defining alertify options
   alertify.delay(5000);
@@ -14,10 +12,10 @@ myApp.factory('EmailFactory',['$http', '$window', '$location', 'alertify',functi
       method: 'POST',
       url: '/contact/sendMessage',
       data: contactMessage
-    }).then(function(response){
+    }).then((response) => {
       alertify.success(contactMessage.firstName + ' ' + contactMessage.lastName + ", Thank you for submitting your question/comment");
       $location.path('/landing');
-    }).catch(function(error) {
+    }).catch((error) => {
       alertify.error('Error sending comment. Pleae try again')
       console.log('error sending comment to server: ', error);
     });

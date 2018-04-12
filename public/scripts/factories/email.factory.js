@@ -4,32 +4,33 @@ myApp.factory('EmailFactory',['$http', '$window', '$location', 'alertify',functi
   console.log('EmailFactory Running...');
 
   // defining alertify options
+  alertify.delay(5000);
   alertify.logPosition('top right');
 
 
   // sending comment to server for emailing
-  function sendComment(comment) {
+  function sendMessage(contactMessage) {
     $http({
       method: 'POST',
-      url: '/contact/sendComment',
-      data: comment
+      url: '/contact/sendMessage',
+      data: contactMessage
     }).then(function(response){
-      // alertify.success(comment.firstName + ' ' + comment.lastName + ", Your comment has been submitted to an Anna's Bananas employee for review");
+      alertify.success(contactMessage.firstName + ' ' + contactMessage.lastName + ", Thank you for submitting your question/comment");
       $location.path('/landing');
     }).catch(function(error) {
       alertify.error('Error sending comment. Pleae try again')
       console.log('error sending comment to server: ', error);
     });
-  };
+  }; // end sendMessage()
 
 
 
 
 
-//public API
+  //public API
   return {
-    sendComment : sendComment
+    sendMessage : sendMessage
   };
 
 
-}]);
+}]); // end myApp.factory()

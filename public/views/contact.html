@@ -1,1 +1,25 @@
-<h1>contact view</h1>
+<section class="flex-contact-container">
+  <p>
+    Please use this form as a way to have specific questions answered.
+  </p>
+  <!-- <form> -->
+    <span>
+      <label>First Name:</label>
+      <input type="text" name="firstName" ng-model="cc.contactMessage.firstName" placeholder="*required">
+    </span>
+    <span>
+      <label>Last Name:</label>
+      <input type="text" name="lastName" ng-model="cc.contactMessage.lastName" placeholder="*required">
+    </span>
+    <span>
+      <label>Email:</label>
+      <input type="text" name="email" ng-model="cc.contactMessage.email" placeholder="*required">
+    </span>
+    <span>
+      <label>Message:</label>
+      <textarea name="message" ng-model="cc.contactMessage.message" placeholder="*required"></textarea>
+    </span>
+    <button type="button" name="submit" ng-click="cc.sendMessage(cc.contactMessage)" ng-if="cc.buttonStatus === 'active'" class="button-active"> Submit </button>
+    <button type="button" ng-class="inactive" ng-if="cc.buttonStatus === 'inactive'" class="button-inactive"><img ng-src="./assets/images/loaders/load.gif"></button>
+  <!-- </form> -->
+</section>

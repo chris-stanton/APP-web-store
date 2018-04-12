@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  background-color: #1d1a1a;
 }
 .flex-landing-container .flex-landingHeader-container {
   display: flex;
@@ -34,15 +35,16 @@ body {
   background-image: url('../assets/images/backgrounds/landing.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 2px solid #00c2ff;
 }
 .flex-landingHeader-container h1 {
   font-size: 50px;
+  text-shadow: 2px 2px 2px #00c2ff;
   margin: 180px 10px 0px 0px;
   font-family: copperplate;
 }
 .flex-landingHeader-container h4 {
   font-size: 30px;
+  text-shadow: 1px 1px 1px #00c2ff;
   font-style: italic;
   margin-top: 180px;
 }
@@ -53,15 +55,14 @@ body {
   margin: 10px 0px 50px 0px;
   justify-content: center;
 }
+.flex-landingGallary-container a {
+  cursor: default;
+}
 .flex-landingGallary-container img{
   height: 40vh;
   margin: 5px;
   /* image-orientation: from-image; */
 }
-
-
-
-
 
 
 
@@ -78,7 +79,8 @@ body {
 }
 .flex-warranty-container h1 {
   font-size: 38px;
-  text-shadow: 2px 2px 2px #8b8b8b;
+  /* text-shadow: 2px 2px 2px #8b8b8b; */
+  text-shadow: 1px 2px 2px #00c2ff;
   padding: 10px 0px;
 }
 .flex-warranty-container p {
@@ -100,24 +102,35 @@ body {
   flex-direction: row;
   margin: 30px 10px;
 }
-.flex-resources-container h1 {
+.flex-resources-container .resources-heading {
   display: flex;
-  flex: 2;
-  text-shadow: 1px 2px 2px #00c2ff;
-  font-size: 30px;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-.flex-resources-container p {
+.flex-resources-container .resources-discription {
   display: flex;
-  flex: 2;
-  padding: 10px;
-  text-shadow: 1px 1px 1px #8b8b8b;
-  font-size: 19px;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.flex-resources-container h1 {
+  display: flex;
+  text-shadow: 1px 2px 2px #00c2ff;
+  font-size: 30px;
 }
 .flex-resources-container img {
   display: flex;
-  flex: 1;
-  height: 30vh;
+  height: 25vh;
   padding: 5px;
+  margin: 5px;
   background-color: #00c2ff;
+}
+.flex-resources-container p {
+  display: flex;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #8b8b8b;
+  font-size: 19px;
 }

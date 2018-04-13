@@ -120,6 +120,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-content: center;
+  justify-content: center;
+
   text-shadow: 1px 1px 1px #8b8b8b;
 }
 .flex-about-software img{
@@ -138,7 +141,7 @@ body {
 }
 .flex-about-wrapdesigner p {
   margin-top: 8px;
-  width: 90%;
+  width: 80%;
 }
 .flex-about-software .flex-about-guidespacingdb {
   display: flex;
@@ -151,7 +154,7 @@ body {
 }
 .flex-about-guidespacingdb p {
   margin-top: 8px;
-  width: 90%;
+  width: 80%;
 }
 
 

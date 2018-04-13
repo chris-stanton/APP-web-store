@@ -7,13 +7,13 @@ myApp.controller('ShopController',['StoreFactory', 'alertify', '$scope', functio
   self.items = [
     {
       id: 0,
-      item: "Custom Build Rods",
+      item: "Custom Rods",
       img: "custom-builds.png",
       link: "#!custom_builds"
     },
     {
       id: 1,
-      item: "Standard Build Rods",
+      item: "Standard Rods",
       img: "standard-builds.png",
       link: "#!standard_builds"
     },

@@ -11,6 +11,11 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
       controller: 'LandingController',
       controllerAs: 'lc'
     })
+    .when ('/shop', {
+      templateUrl: './views/shop.html',
+      controller: 'ShopController',
+      controllerAs: 'sc'
+    })
     .when ('/contact', {
       templateUrl: './views/contact.html',
       controller: 'ContactController',

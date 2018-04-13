@@ -172,26 +172,26 @@ body {
 
 
 
-/* //////////// */
-/*     SHOP     */
-/* //////////// */
-.flex-shop-container {
+/* ///////////// */
+/*     PARTS     */
+/* ///////////// */
+.flex-parts-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.flex-shop-container .shop-item-container {
+.flex-parts-container .parts-item-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 40vh;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #000000;
 }
-.shop-item-container img {
+.parts-item-container img {
   flex: 1;
   height: 40vh;
 }
-.shop-item-container h3 {
+.parts-item-container h3 {
   flex: 2;
   text-align: center;
   font-size: 70px;

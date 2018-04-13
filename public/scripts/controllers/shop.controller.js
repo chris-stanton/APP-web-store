@@ -9,13 +9,13 @@ myApp.controller('ShopController',['StoreFactory', 'alertify', '$scope', functio
       id: 0,
       item: "Custom Rods",
       img: "custom-builds.png",
-      link: "#!custom_builds"
+      link: "#!custom_build"
     },
     {
       id: 1,
       item: "Standard Rods",
       img: "standard-builds.png",
-      link: "#!standard_builds"
+      link: "#!standard_build"
     },
     {
       id: 2,

@@ -1,7 +1,9 @@
 
 <section class="flex-shop-container">
-  <div ng-repeat="items in sc.items" class="shop-item-container">
-    <img ng-src="./assets/images/parts/{{items.img}}">
-    <h3>{{items.item}}</h3>
-  </div>
+  <a href="{{items.link}}" ng-repeat="items in sc.items">
+    <div class="shop-item-container">
+      <img ng-src="./assets/images/parts/{{items.img}}">
+      <h3>{{items.item}}</h3>
+    </div>
+  </a>
 </section>

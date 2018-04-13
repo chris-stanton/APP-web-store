@@ -26,7 +26,7 @@ body {
 .background-reset {
   background-color: none;
 }
-
+/* mockup img sizing */
 .mac{
   width: 38vw;
   padding: 5px;
@@ -176,6 +176,10 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.flex-shop-container a {
+  color: #000000;
+  text-decoration: none;
+}
 .flex-shop-container .shop-item-container {
   display: flex;
   flex-direction: row;
@@ -193,9 +197,9 @@ body {
   font-size: 70px;
   text-shadow: 4px 4px 4px #8b8b8b;
 }
-
-
-
+.shop-item-container h3:hover {
+  text-shadow: 4px 4px 4px #00c2ff;
+}
 
 
 
@@ -223,6 +227,9 @@ body {
   text-align: center;
   font-size: 70px;
   text-shadow: 4px 4px 4px #8b8b8b;
+}
+.parts-item-container h3:hover {
+  text-shadow: 4px 4px 4px #00c2ff;
 }
 
 

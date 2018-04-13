@@ -24,7 +24,7 @@ myApp.controller('PartsController',['StoreFactory', 'alertify', '$scope', functi
       part: "Tools",
       img: "tools.png"
     }
-  ]
+  ];
 
 
 

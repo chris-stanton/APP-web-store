@@ -101,7 +101,7 @@ body {
   align-content: center;
 }
 .flex-about-container h1 {
-  margin: 25px 0px 10px 0px;
+  margin: 35px 0px 10px 0px;
   font-size: 46px;
   text-shadow: 2px 2px 2px #8b8b8b;
 }
@@ -131,7 +131,6 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
-
   text-shadow: 1px 1px 1px #8b8b8b;
 }
 .flex-about-software .flex-about-wrapdesigner {
@@ -238,13 +237,13 @@ body {
   align-items: center;
   text-align: center;
   width: 100vw;
-  margin: 30px 0px;
+  /* margin: 30px 0px; */
 }
 .flex-warranty-container h1 {
-  font-size: 38px;
+  font-size: 46px;
   text-shadow: 2px 2px 2px #8b8b8b;
   /* text-shadow: 1px 2px 2px #00c2ff; */
-  padding: 10px 0px;
+  margin: 35px 0px 10px 0px;
 }
 .flex-warranty-container p {
   width: 70vw;

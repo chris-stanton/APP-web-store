@@ -39,7 +39,17 @@
   /*   WARRANTY   */
   /* //////////// */
   .flex-warranty-container {
-    margin: 30px 0px 60px 0px;
+    margin: 0px 0px 60px 0px;
+  }
+
+
+
+
+  /* //////////// */
+  /*    ABOUT     */
+  /* //////////// */
+  .flex-about-software {
+    flex-direction: column;
   }
 
 

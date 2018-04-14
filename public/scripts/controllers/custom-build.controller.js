@@ -18,21 +18,21 @@ myApp.controller('CustombuildController',['StoreFactory', 'alertify', '$scope', 
     },
     {
       id: 2,
+      type: 'Split Grip Cork',
+      cost: 5,
+      img: 'split-grip.png',
+    },
+    {
+      id: 3,
       type: '3" Carbon Fiber Insert',
       cost: 15,
       img: '3-cfi.png',
     },
     {
-      id: 3,
+      id: 4,
       type: '5" Carbon Fiber Insert',
       cost: 17,
       img: '5-cfi.png',
-    },
-    {
-      id: 4,
-      type: 'Split Grip Cork',
-      cost: 5,
-      img: 'split-grip.png',
     }
   ];
 

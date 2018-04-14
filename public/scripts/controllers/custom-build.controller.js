@@ -10,7 +10,7 @@ myApp.controller('CustombuildController',['StoreFactory', 'alertify', '$scope', 
       img_2: 'open_cross/2.png',
     },
     {
-      type: 'Fully Closed Off',
+      type: 'Closed Off',
       img_1: 'closed_off/1.png',
       img_2: 'closed_off/2.png',
     },
@@ -21,8 +21,8 @@ myApp.controller('CustombuildController',['StoreFactory', 'alertify', '$scope', 
     },
     {
       type: 'Tiger',
-      img_1: 'tiger/1.png',
-      img_2: 'tiger/2.png',
+      img_1: 'tigers/1.png',
+      img_2: 'tigers/2.png',
     }
   ];
 

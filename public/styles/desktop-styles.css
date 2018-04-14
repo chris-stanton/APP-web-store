@@ -234,6 +234,37 @@ body {
 
 
 
+/* /////////////// */
+/*  CUSTOM BUILD   */
+/* /////////////// */
+.flex-custombuild-container {
+  display: flex;
+  flex-direction: column;
+}
+.flex-custombuild-container .custombuild-wrap-containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.custombuild-wrap-containers .custombuild-wrap {
+  text-align: center;
+  margin: 7px;
+  text-shadow: 1px 1px 1px #8b8b8b;
+}
+.custombuild-wrap img {
+  width: 10vw;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 /* //////////// */
 /*   CONTACT    */
 /* //////////// */

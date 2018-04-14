@@ -1,10 +1,12 @@
 
 <section class="flex-custombuild-container">
-  <h1>Custom Build</h1>
-  <section ng-repeat="wrap in cbc.wraps" class="flex-custombuild-wraps">
-    <h4>{{wrap.type}}</h4>
-    <img ng-src="./assets/images/wraps/{{wrap.img_1}}">
-    <img ng-src="./assets/images/wraps/{{wrap.img_2}}">
+  <!-- wrap types -->
+  <section class="custombuild-wrap-containers">
+    <div ng-repeat="wrap in cbc.wraps" class="custombuild-wrap">
+      <h4>{{wrap.type}}</h4>
+      <img ng-src="./assets/images/wraps/{{wrap.img_1}}">
+      <img ng-src="./assets/images/wraps/{{wrap.img_2}}">
+    </div>
   </section>
 
 </section>

@@ -1,9 +1,19 @@
 
 <section class="flex-custombuild-container">
+  <!-- handle types -->
+  <section class="custombuild-grip-containers">
+    <div ng-repeat="grip in cbc.grips" class="custombuild-grip">
+      <h4>{{grip.type}}</h4>
+      <h6>${{grip.cost}}.00 USD</h6>
+      <img ng-src="./assets/images/grips/{{grip.img}}">
+    </div>
+  </section>
+
   <!-- wrap types -->
   <section class="custombuild-wrap-containers">
     <div ng-repeat="wrap in cbc.wraps" class="custombuild-wrap">
       <h4>{{wrap.type}}</h4>
+      <h6>${{wrap.cost}}.00 USD</h6>
       <img ng-src="./assets/images/wraps/{{wrap.img_1}}">
       <img ng-src="./assets/images/wraps/{{wrap.img_2}}">
     </div>

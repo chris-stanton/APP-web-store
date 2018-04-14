@@ -246,14 +246,46 @@ body {
   flex-direction: row;
   justify-content: center;
 }
+/* wraps */
 .custombuild-wrap-containers .custombuild-wrap {
   text-align: center;
-  margin: 7px;
-  text-shadow: 1px 1px 1px #8b8b8b;
+  align-items: baseline;
+  margin: 20px;
 }
 .custombuild-wrap img {
   width: 10vw;
   border-radius: 5px;
+}
+.custombuild-wrap h4 {
+  font-size: 25px;
+  text-shadow: 1px 1px 1px #8b8b8b;
+}
+.custombuild-wrap h6 {
+  font-size: 15px;
+  text-shadow: 1px 1px 1px #8b8b8b;
+}
+/* handles */
+.flex-custombuild-container .custombuild-grip-containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.custombuild-grip-containers .custombuild-grip {
+  text-align: center;
+  align-items: baseline;
+  margin: 20px;
+}
+.custombuild-grip img {
+  width: 10vw;
+  border-radius: 5px;
+}
+.custombuild-grip h4 {
+  font-size: 25px;
+  text-shadow: 1px 1px 1px #8b8b8b;
+}
+.custombuild-grip h6 {
+  font-size: 15px;
+  text-shadow: 1px 1px 1px #8b8b8b;
 }
 
 

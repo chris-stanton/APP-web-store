@@ -13,6 +13,7 @@
   4. Alertify.js
   5. NodeJS
   6. ExpressJS
+  7. Strip API
   7. Nodemailer
   9. Dotenv-node  
   10. GIT / GitHub

@@ -16,6 +16,11 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
       controller: 'ShopController',
       controllerAs: 'sc'
     })
+    .when ('/sales', {
+      templateUrl: './views/sales.html',
+      controller: 'SalesController',
+      controllerAs: 'sale'
+    })
     .when ('/custom_build', {
       templateUrl: './views/custom-build.html',
       controller: 'CustombuildController',

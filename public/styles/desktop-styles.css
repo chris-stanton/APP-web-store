@@ -203,6 +203,46 @@ body {
 
 
 
+
+
+/* /////////////// */
+/*      SALE       */
+/* /////////////// */
+.flex-sales-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.flex-sales-container .sales-image-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+.sales-image-container .sales-image-large {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.sales-image-large img {
+  height: 50vh;
+}
+.sales-image-container .sales-image-small {
+  display: flex;
+  flex-direction: column;
+}
+.sales-image-small img {
+  height: 12vh;
+}
+
+
+
+
+
+
+
+
+
+
 /* ///////////// */
 /*     PARTS     */
 /* ///////////// */

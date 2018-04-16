@@ -1,8 +1,8 @@
 
-# Web-Store
+# Fishing Rod / Rod Building Parts Web-Store
 
 
-## Description:
+## Description: Platform to sell my custom made fishing rods and other rod building parts and supplies.
 
 
 ## Technologies Used:

@@ -2,7 +2,7 @@
 # Fishing Rod / Rod Building Parts Web-Store
 
 
-## Description: Platform to sell my custom made fishing rods and other rod building parts and supplies.
+## Description: Platform to sell custom made fishing rods and other rod building parts, materials and supplies. This app has a User side and and Admin side to display sales and inventory details.
 
 
 ## Technologies Used:

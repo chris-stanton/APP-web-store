@@ -4,7 +4,7 @@ let myApp = angular.module('myApp', ['ngRoute', '720kb.tooltips', 'ngAlertify'])
 myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider, tooltipsConfProvider) {
 
 
-  // defining routes
+  // defining route provider
   $routeProvider
     .when ('/landing', {
       templateUrl: './views/landing.html',
@@ -45,13 +45,13 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
     .when ('/resources', {
       templateUrl: './views/resources.html',
     })
-    .otherwise ( {
+    .otherwise ({
         redirectTo: '/landing'
     });
 
   // angular-tooltips global config options
   tooltipsConfProvider.configure({
-    'smart': false,
+    'smart': true,
     'side': 'top',
     'size': 'small',
     'speed': 'slow',

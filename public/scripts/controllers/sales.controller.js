@@ -3,15 +3,6 @@ myApp.controller('SalesController',['StoreFactory', 'alertify', '$scope', functi
 
   const self = this;
 
-  function init() {
-    self.scale = 'vikings/1.png'
-  }
-init()
-
-  self.enlargeImage = (scale) => {
-    console.log(scale);
-  }
-
   self.items = [
     {
       id: 0,

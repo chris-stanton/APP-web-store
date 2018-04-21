@@ -1,7 +1,8 @@
 
 <section class="flex-sales-container">
+
   <h1>Ice Fishing Rods</h1>
-  <section ng-repeat="item in sale.items">
+  <section ng-repeat="item in sale.items" class="sales-output-container">
     <!-- image container -->
     <div class="sales-image-container">
       <div class="sales-image-large">
@@ -14,13 +15,19 @@
         <img ng-src="./assets/images/sale/{{item.img_3}}">
       </div>
     </div>
+
+    <div class="sales-data-container">
+      <div class="sales-data-headings">
+
+      </div>
+    </div>
   </section>
 
-  <h1>Ice Rod Parts</h1>
+  <!-- <h1>Parts</h1>
   <section>
-    <h5>blanks</h5>
 
-  </section>
+
+  </section> -->
 
 
 </section>

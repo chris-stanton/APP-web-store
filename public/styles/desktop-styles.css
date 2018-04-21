@@ -213,6 +213,11 @@ body {
   flex-direction: column;
   width: 100vw;
 }
+.sales-output-container {
+  display: flex;
+  flex-direction: row;
+  /* margin: 10px 0px; */
+}
 .flex-sales-container .sales-image-container {
   display: flex;
   flex-direction: row;
@@ -232,6 +237,11 @@ body {
 }
 .sales-image-small img {
   height: 12vh;
+}
+.flex-sales-container .sales-data-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
 }
 
 

@@ -237,11 +237,10 @@ body {
 }
 .sales-image-small img {
   height: 12vh;
+  margin: 2px;
 }
 .flex-sales-container .sales-data-container {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0px;
+  text-align: left;
 }
 
 

@@ -17,7 +17,8 @@ myApp.controller('SalesController',['StoreFactory', 'alertify', '$scope', functi
       img_0: 'vikings/1.png',
       img_1: 'vikings/2.png',
       img_2: 'vikings/3.png',
-      img_3: 'vikings/4.png'
+      img_3: 'vikings/4.png',
+      notes: 'mn vikings'
     },
     {
       id: 1,
@@ -32,7 +33,8 @@ myApp.controller('SalesController',['StoreFactory', 'alertify', '$scope', functi
       img_0: 'walleye/1.png',
       img_1: 'walleye/2.png',
       img_2: 'walleye/3.png',
-      img_3: 'walleye/4.png'
+      img_3: 'walleye/4.png',
+      notes: 'medium heavy walleye'
     }
   ];
 

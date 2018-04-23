@@ -32,8 +32,8 @@
   3. Open terminal or and navigate into folder
   4. Run commands:
     - ``npm install`` - Installs NodeJS package dependencies listed in ``package.json`` file
-    - ``npm start`` - Starts server
-    - ``npm test`` - Starts server using Nodemon (Nodemon will need to be installed previously on your machine)
+    - ``npm start`` - Starts ExpressJS server
+    - ``npm test`` - Starts ExpressJS server using Nodemon (Nodemon will need to be installed previously on your machine)
   5. Server is listening on localhost port: 5000
 
 NOTE:

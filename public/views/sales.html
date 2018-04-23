@@ -1,7 +1,7 @@
 
+<!-- main container -->
 <section class="flex-sales-container">
-
-  <h1>Ice Fishing Rods</h1>
+  <!-- item repeat container -->
   <section ng-repeat="item in sale.items" class="sales-output-container">
     <!-- image container -->
     <div class="sales-image-container">
@@ -33,6 +33,7 @@
         <tr><th>Sale Price: </th><td>${{item.sale_price}}.00</td></tr>
       </table>
     </div>
+  <!-- end item repeat container -->
   </section>
 
 

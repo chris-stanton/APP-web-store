@@ -66,6 +66,26 @@
 
 
 
+
+
+
+  /* //////////// */
+  /*     PARTS    */
+  /* //////////// */
+  .flex-parts-container .parts-item-container {
+    flex-direction: column;
+  }
+  .parts-item-container img {
+    height: 20vh;
+  }
+
+
+
+
+
+
+
+
   /* //////////// */
   /*   WARRANTY   */
   /* //////////// */

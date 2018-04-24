@@ -15,6 +15,12 @@ body {
 
 
 
+.line-through {
+  text-decoration: line-through;
+}
+
+
+
 /* //////////////// */
 /*   INPUT ERROR    */
 /* BACKGROUND COLOR */
@@ -211,12 +217,16 @@ body {
 .flex-sales-container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  margin-bottom: 30px;
 }
-.sales-output-container {
+/* section container */
+.flex-sales-container .sales-output-container {
   display: flex;
+  flex: 2;
   flex-direction: row;
-  /* margin: 10px 0px; */
+  align-items: center;
+  height: 60vh;
+  width: 100%;
 }
 .flex-sales-container .sales-image-container {
   display: flex;
@@ -226,7 +236,7 @@ body {
 .sales-image-container .sales-image-large {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
 }
 .sales-image-large img {
   height: 50vh;
@@ -239,10 +249,42 @@ body {
   height: 12vh;
   margin: 2px;
 }
+/* data container */
 .flex-sales-container .sales-data-container {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  width: 100%;
+  align-items: baseline;
+}
+.sales-data-container tr {
+  margin: 10px 2px;
   text-align: left;
 }
-
+.sales-data-container th {
+  font-size: 23px;
+  text-shadow: 1px 1px 1px #8b8b8b;
+  padding-right: 10px;
+}
+.sales-data-container td {
+  font-size: 19px;
+  text-shadow: 1px 1px 1px #8b8b8b;
+}
+/* button container */
+.flex-sales-container .sales-button-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: baseline;
+  width: 100%;
+}
+.sales-button-container button {
+  height: 30px;
+  width: 50%;
+  background-color: #14ff00;
+  border-radius: 10px;
+  font-size: 15px;
+}
 
 
 
@@ -280,6 +322,7 @@ body {
 .parts-item-container h3:hover {
   text-shadow: 4px 4px 4px #00c2ff;
 }
+
 
 
 

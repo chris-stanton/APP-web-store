@@ -34,6 +34,37 @@
   }
 
 
+  /* //////////// */
+  /*     SALES    */
+  /* //////////// */
+  .flex-sales-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100vw;
+    align-items: center;
+  }
+  .flex-sales-container .sales-output-container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 15px 0px;
+  }
+  .flex-sales-container .sales-image-container {
+    flex-direction: column;
+  }
+  .sales-image-container .sales-image-small {
+    flex-direction: row;
+  }
+  .sales-data-container td {
+    font-size: 16px;
+  }
+  .sales-button-container button {
+    width: 80vw;
+  }
+
+
 
   /* //////////// */
   /*   WARRANTY   */

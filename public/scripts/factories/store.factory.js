@@ -5,7 +5,7 @@ myApp.factory('StoreFactory',['$http', '$location', 'alertify',function($http, $
   alertify.delay(5000);
   alertify.logPosition('top right');
 
-
+  // DB response containers
   let sale_items = { list:[] };
 
 
@@ -16,6 +16,9 @@ myApp.factory('StoreFactory',['$http', '$location', 'alertify',function($http, $
       url: '/sale/getSaleItems'
     }).then(function(response) {
       sale_items.list = response.data;
+    }).catch(function(error) {
+      alertify.alert("Error with GET request to DB for all sale items");
+        console.log('Error with GET request to DB for all sale items: ', error);
     });
   };
 
@@ -30,6 +33,7 @@ myApp.factory('StoreFactory',['$http', '$location', 'alertify',function($http, $
   return {
     // DB call for all sale items
     getSaleItems : getSaleItems,
+    // DB return for all sale items
     sale_items : sale_items
 
   };

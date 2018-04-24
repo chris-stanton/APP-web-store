@@ -40,7 +40,7 @@ if (process.env.DATABASE_URL) {
     //env var: PGPORT (postgresql port listening)
     port: process.env.DATABASE_PORT || 5432,
     //env var: PGDATABASE (postgresql DB name)
-    database: process.env.DATABASE_NAME || 'guide-spacing',
+    database: process.env.DATABASE_NAME || 'e-store',
     // max number of clients in the pool
     max: 10,
     // how long a client is allowed to remain idle before being closed

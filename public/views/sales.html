@@ -2,7 +2,7 @@
 <!-- main container -->
 <section class="flex-sales-container">
   <!-- item repeat container -->
-  <section ng-repeat="item in sale.items" class="sales-output-container">
+  <section ng-repeat="item in sale.items.list" class="sales-output-container">
     <!-- image container -->
     <div class="sales-image-container">
       <div class="sales-image-large">
@@ -32,7 +32,7 @@
         <tr><th>Sale Price: </th><td>${{item.sale_price}}.00</td></tr>
       </table>
       <div class="sales-button-container">
-        <button type="button" ng-click="sale.buy(item.id)"> BUY </button>
+        <button type="button" ng-click="sale.buy(item.id)">BUY</button>
       </div>
     </div>
   <!-- end item repeat container -->

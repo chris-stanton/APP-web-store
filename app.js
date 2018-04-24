@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const port = process.env.PORT || 5000;
 
 // defining server side routes
+const sale = require('./server/routes/sale.js');
 const contact = require('./server/routes/contact.js');
 
 // server back static files
@@ -22,6 +23,7 @@ app.get('/', (req, res) => {
 });
 
 // server side routes
+app.use('/sale', sale);
 app.use('/contact', contact);
 
 // port listening

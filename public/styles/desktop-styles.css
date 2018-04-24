@@ -181,6 +181,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
+  width: 100vw;
 }
 .flex-shop-container a {
   color: #000000;
@@ -195,7 +197,9 @@ body {
 }
 .shop-item-container img {
   flex: 1;
-  height: 40vh;
+  height: 80%;
+  width: 15vw;
+  border-radius: 50%;
 }
 .shop-item-container h3 {
   flex: 2;
@@ -281,9 +285,17 @@ body {
 .sales-button-container button {
   height: 30px;
   width: 50%;
+  outline: none;
   background-color: #14ff00;
   border-radius: 10px;
   font-size: 15px;
+  margin-top: 20px;
+}
+.sales-button-container button:hover {
+  cursor: pointer;
+}
+.sales-button-container button:active {
+  background-color: #07d62f;
 }
 
 

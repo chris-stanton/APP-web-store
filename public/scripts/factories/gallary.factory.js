@@ -31,7 +31,7 @@ myApp.factory('GallaryFactory',['$http', '$location', 'alertify',function($http,
 
   //public API
   return {
-    // DB call for all sa gallary pics
+    // DB call for all gallary pics
     getGallary : getGallary,
     // DB return for all gallary pics
     gallary_pics : gallary_pics

@@ -23,6 +23,32 @@ VALUES ('Noodle w/intregated nitinol spring bobber', '28', 'Standard black', '5"
        ('Medium Carbon', '32', 'Standard chrome', '5" Tapered Cork', 'Glow green', 150, 120, 'walleye/1.png', 'walleye/2.png', 'walleye/3.png', 'walleye/4.png', 'MN vikings', 1);
 
 
+
+
+-- landing view gallary pics
+CREATE TABLE gallary (
+	id SERIAL PRIMARY KEY,
+	image VARCHAR(200) NOT NULL unique,
+	tooltip VARCHAR(500) NOT NULL,
+	active boolean DEFAULT true
+);
+INSERT INTO gallary (image, tooltip)
+VALUES ('./assets/images/gallary/1.jpg', 'Three thread tiger wrap, 5" cork grip'),
+        ('./assets/images/gallary/2.jpg', 'Three thread tiger wrap, split cork grip'),
+        ('./assets/images/gallary/3.jpg', 'Four thread tiger, 6`6" RodGeeks C266MLXF'),
+        ('./assets/images/gallary/4.jpg', 'Fully closed off wrap, 5" 3D printed grip'),
+        ('./assets/images/gallary/5.jpg', 'Three thread tiger wrap, White camo hydrodipped noodle blank, 3" cork grip'),
+        ('./assets/images/gallary/6.jpg', 'Three thread tiger, 6`6" RodGeeks C266MLXF'),
+        ('./assets/images/gallary/7.jpg', 'Three thread tiger wrap, Orange camo hydrodipped noodle blank, 3" cork grip'),
+        ('./assets/images/gallary/8.jpg', 'Razor pink spiral wrap'),
+        ('./assets/images/gallary/9.jpg', 'Green Bay Packers razor spiral wrap'),
+        ('./assets/images/gallary/10.jpg', 'Open water tiger wrapped rods'),
+        ('./assets/images/gallary/11.jpg', '3 matching MN Vikings tiger wrapped noodle rods'),
+        ('./assets/images/gallary/12.jpg', 'Four thread tiger with one off custom modlded fiberglass grip');
+
+
+
+
 -- Admin Authentication
 CREATE TABLE users (
 	id SERIAL PRIMARY KEY,

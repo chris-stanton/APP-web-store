@@ -5,6 +5,6 @@
     <h4>Custom Fishing Rods</h4>
   </header>
   <section class="flex-landingGallary-container">
-    <a ng-repeat="gallary in lc.gallaryInfo" tooltips tooltip-template-url='./views/templates/tooltips/landing-tooltip.html'><img ng-src="{{gallary.image}}"></a>
+    <a ng-repeat="gallary in lc.gallaryInfo.list" tooltips tooltip-template-url='./views/templates/tooltips/landing-tooltip.html'><img ng-src="{{gallary.image}}"></a>
   </section>
 </section>

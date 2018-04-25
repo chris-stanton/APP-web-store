@@ -1,0 +1,13 @@
+
+.landing-tooltip-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.landing-tooltip-container img {
+  height: 50vh;
+}
+.landing-tooltip-container h4 {
+  font-size: 15px;
+  text-shadow: 1px 1px 1px #00c2ff;
+}

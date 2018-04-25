@@ -37,13 +37,13 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
       controllerAs: 'cc'
     })
     .when ('/about', {
-      templateUrl: './views/about.html',
-    })
-    .when ('/warranty', {
-      templateUrl: './views/warranty.html',
+      templateUrl: './views/static/about.html',
     })
     .when ('/resources', {
-      templateUrl: './views/resources.html',
+      templateUrl: './views/static/resources.html',
+    })
+    .when ('/warranty', {
+      templateUrl: './views/static/warranty.html',
     })
     .otherwise ({
         redirectTo: '/landing'

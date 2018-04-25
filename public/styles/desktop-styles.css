@@ -17,6 +17,7 @@ body {
 
 .line-through {
   text-decoration: line-through;
+  color: #ff0000;
 }
 
 

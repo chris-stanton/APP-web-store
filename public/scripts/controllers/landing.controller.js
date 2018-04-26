@@ -14,4 +14,5 @@ myApp.controller('LandingController',['GallaryFactory', 'alertify', '$scope', fu
 
 
 
+
 }]); // end myAPP.controller

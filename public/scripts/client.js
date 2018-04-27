@@ -47,6 +47,7 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
         redirectTo: '/landing'
     });
 
+
   // angular-tooltips global config options
   tooltipsConfProvider.configure({
     'smart': true,

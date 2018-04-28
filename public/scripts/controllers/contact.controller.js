@@ -49,6 +49,4 @@ myApp.controller('ContactController',['EmailFactory', 'alertify', '$scope', func
 
 
 
-
-
 }]); // end myAPP.controller

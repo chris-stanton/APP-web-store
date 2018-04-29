@@ -11,7 +11,6 @@ myApp.controller('SalesController',['StoreFactory', 'alertify', '$scope', functi
   self.items = StoreFactory.sale_items;
 
 
-
   // button click listener
   self.buy = (item_id) => {
     // item bought by ID

@@ -10,6 +10,11 @@ myApp.controller('SalesController',['StoreFactory', 'alertify', '$scope', functi
   // return of all sale items from DB
   self.items = StoreFactory.sale_items;
 
+  self.large = (img) => {
+    console.log(img);
+    self.img = img;
+  }
+
 
   // button click listener
   self.buy = (item_id) => {

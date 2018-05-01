@@ -1,4 +1,6 @@
 
+-- Copyright (c) 2018 Christopher J. Stanton 
+
 -- product info and inventory
 CREATE TABLE inventory (
   id SERIAL PRIMARY KEY,

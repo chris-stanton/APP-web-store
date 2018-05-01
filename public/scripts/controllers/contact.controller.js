@@ -1,4 +1,5 @@
 
+// Copyright (c) 2018 Christopher J. Stanton 
 myApp.controller('ContactController',['EmailFactory', 'alertify', '$scope', function(EmailFactory, alertify, $scope) {
 
   const self = this;

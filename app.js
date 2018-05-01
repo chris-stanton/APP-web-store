@@ -1,4 +1,6 @@
 
+// Copyright (c) 2018 Christopher J. Stanton 
+
 // requiring dependancies
 require('dotenv').config();
 const express = require('express');

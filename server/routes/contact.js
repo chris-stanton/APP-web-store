@@ -1,4 +1,6 @@
 
+// Copyright (c) 2018 Christopher J. Stanton 
+
 // Requiring Dependancies
 const router = require('express').Router();
 const nodemailer = require('nodemailer');

@@ -1,4 +1,5 @@
 
+// Copyright (c) 2018 Christopher J. Stanton 
 myApp.controller('SalesController',['StoreFactory', 'alertify', '$scope', function(StoreFactory, alertify, $scope) {
 
 

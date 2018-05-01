@@ -1,4 +1,6 @@
 
+// Copyright (c) 2018 Christopher J. Stanton 
+
 ///////////////////////////////////////////////
 //  DATABASES W/ DEPLOY FILE                 //
 //  Note: FILE SETUP FOR DEPLOY WITH HEROKU  //

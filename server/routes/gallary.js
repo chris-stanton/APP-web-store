@@ -1,4 +1,6 @@
 
+// Copyright (c) 2018 Christopher J. Stanton 
+
 const router = require('express').Router();
 const pg = require('pg');
 const pool = require('../config/database.config');

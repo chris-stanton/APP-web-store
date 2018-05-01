@@ -1,4 +1,5 @@
 
+// Copyright (c) 2018 Christopher J. Stanton 
 myApp.factory('StoreFactory',['$http', '$location', 'alertify',function($http, $location, alertify) {
 
   // alertify options

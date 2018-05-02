@@ -1,5 +1,5 @@
 
-// Copyright (c) 2018 Christopher J. Stanton 
+// Copyright (c) 2018 Christopher J. Stanton
 let myApp = angular.module('myApp', ['ngRoute', '720kb.tooltips', 'ngAlertify']);
 
 myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider, tooltipsConfProvider) {
@@ -43,6 +43,11 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
     })
     .when ('/warranty', {
       templateUrl: './views/static/warranty.html',
+    })
+    .when ('/admin_dashboard', {
+      templateUrl: './views/admin/admin.dashboard.html',
+      controller: 'AdmindashboardController',
+      controllerAs: 'adc'
     })
     .otherwise ({
         redirectTo: '/landing'

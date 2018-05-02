@@ -4,32 +4,27 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 
   const self = this;
 
-  function tooltipHtml(n, d){	/* function to create html content string in tooltip div. */
-		return "<h4>"+n+"</h4><table>"+
-			"<tr><td>Low</td><td>"+(d.low)+"</td></tr>"+
-			"<tr><td>Average</td><td>"+(d.avg)+"</td></tr>"+
-			"<tr><td>High</td><td>"+(d.high)+"</td></tr>"+
-			"</table>";
-	}
-
-	var sampleData ={};	/* Sample random data. */
+// US state map
+  function tooltip(n, d){
+		return "<h1>"+n+"</h1>"+
+			     "<h4>Money Generated: </td><td>$"+(d.totalSalesAmount)+".00</h4>"+
+			     "<h4># Units sold: </td><td>"+(d.unitsSold)+"</h4>";
+	};
+	let testData =[];
 	["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
 	"ME", "NH", "VT", "NY", "NJ", "PA", "DE", "MD", "WV", "KY", "OH",
 	"MI", "WY", "MT", "ID", "WA", "DC", "TX", "CA", "AZ", "NV", "UT",
 	"CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN",
 	"WI", "MO", "AR", "OK", "KS", "LS", "VA"]
 		.forEach(function(d){
-			var low=Math.round(100*Math.random()),
-				mid=Math.round(100*Math.random()),
-				high=Math.round(100*Math.random());
-			sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]),
-					avg:Math.round((low+mid+high)/3), color:d3.interpolate("#ffffcc", "#800026")(low/100)};
+			let totalSalesAmount=Math.round(100*Math.random());
+				  unitsSold=Math.round(100*Math.random()),
+			    testData[d]={totalSalesAmount:d3.min([unitsSold]), unitsSold:d3.max([totalSalesAmount]),
+					avg:Math.round((totalSalesAmount)), color:d3.interpolate("#ff0000", "#2400fe")(unitsSold/100)};
 		});
-
 	/* draw states on id #statesvg */
-	uStates.draw("#statesvg", sampleData, tooltipHtml);
+	uStates.draw("#statesvg", testData, tooltip);
 
-	d3.select(self.frameElement).style("height", "600px");
 
 
 

@@ -20,7 +20,7 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 	"WI", "MO", "AR", "OK", "KS", "LS", "VA"
   ]
 		.forEach(function(d){
-      // data per dataset
+      // looping through each dataset
 			let totalSalesAmount = Math.round(100*Math.random());
 			let	unitsSold = Math.round(100*Math.random());
 	    testData[d] = {

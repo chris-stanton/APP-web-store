@@ -7,8 +7,8 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 // US state map
   function tooltip(n, d){
 		return "<h1>"+n+"</h1>"+
-			     "<h4>Money Generated: </td><td>$"+(d.totalSalesAmount)+".00</h4>"+
-			     "<h4># Units sold: </td><td>"+(d.unitsSold)+"</h4>";
+			     "<h5>Money Generated: </td><td>$"+(d.totalSalesAmount)+".00</h5>"+
+			     "<h5># Units sold: </td><td>"+(d.unitsSold)+"</h5>";
 	};
 	let testData =[];
 	["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
@@ -20,7 +20,7 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 			let totalSalesAmount=Math.round(100*Math.random());
 				  unitsSold=Math.round(100*Math.random()),
 			    testData[d]={totalSalesAmount:d3.min([unitsSold]), unitsSold:d3.max([totalSalesAmount]),
-					avg:Math.round((totalSalesAmount)), color:d3.interpolate("#ff0000", "#2400fe")(unitsSold/100)};
+					avg:Math.round((totalSalesAmount)), color:d3.interpolate("#00ff40", "#193fb3")(totalSalesAmount/100)};
 		});
 	/* draw states on id #statesvg */
 	uStates.draw("#statesvg", testData, tooltip);

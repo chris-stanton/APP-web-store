@@ -30,6 +30,12 @@ footer {
   justify-content: flex-end;
   margin-right: 15px;
 }
+.footer-links-container .admin-login {
+  color: #ffffff;
+  font-size: 7px;
+  text-decoration: none;
+  margin-left: 10px;
+}
 .footer-links-container img {
   height: 4vh;
   margin: 5px;

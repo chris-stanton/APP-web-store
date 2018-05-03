@@ -1,0 +1,21 @@
+
+.flex-adminNav-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  background-color: #1d1a1a;
+  border-bottom: 2px solid #00c2ff;
+}
+.flex-adminNav-container a {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  color: #ffffff;
+  justify-content: center;
+  margin: 3px;
+  padding: 10px;
+}
+.flex-adminNav-container a:hover {
+  background-color: #00c2ff;
+  color: #000000;
+}

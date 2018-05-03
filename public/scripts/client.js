@@ -7,6 +7,7 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
 
   // defining route provider
   $routeProvider
+    // User routes
     .when ('/landing', {
       templateUrl: './views/landing.html',
       controller: 'LandingController',
@@ -44,11 +45,13 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
     .when ('/warranty', {
       templateUrl: './views/static/warranty.html',
     })
+    // admin routes
     .when ('/admin_dashboard', {
       templateUrl: './views/admin/admin.dashboard.html',
       controller: 'AdmindashboardController',
       controllerAs: 'adc'
     })
+    // else redirect
     .otherwise ({
         redirectTo: '/landing'
     });

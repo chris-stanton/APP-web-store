@@ -32,6 +32,9 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 	/* draw states on #statesvg */
 	uStates.draw("#statesvg", testData, tooltip);
 
+  self.update = () => {
+    console.log('button hit');
+  };
 
 
 

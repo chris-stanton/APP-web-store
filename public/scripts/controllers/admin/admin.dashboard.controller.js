@@ -26,7 +26,7 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 	    testData[d] = {
         totalSalesAmount: d3.min([unitsSold]),
         unitsSold: d3.max([totalSalesAmount]),
-			  avg: Math.round((totalSalesAmount)),
+			  // avg: Math.round((totalSalesAmount)),
         color: d3.interpolate("#00ff40", "#193fb3")(totalSalesAmount/100)
       };
 

@@ -1,5 +1,5 @@
 
-// Copyright (c) 2018 Christopher J. Stanton 
+// Copyright (c) 2018 Christopher J. Stanton
 myApp.factory('StoreFactory',['$http', '$location', 'alertify',function($http, $location, alertify) {
 
   // alertify options
@@ -10,7 +10,7 @@ myApp.factory('StoreFactory',['$http', '$location', 'alertify',function($http, $
   let sale_items = { list:[] };
 
 
-
+  // gets all products where sale is active
   function getSaleItems() {
     $http({
       method: 'GET',

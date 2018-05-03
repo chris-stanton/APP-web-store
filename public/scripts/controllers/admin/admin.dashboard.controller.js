@@ -27,6 +27,7 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 			  avg: Math.round((totalSalesAmount)),
         color: d3.interpolate("#00ff40", "#193fb3")(totalSalesAmount/100)
       };
+
 		});
 	/* draw states on #statesvg */
 	uStates.draw("#statesvg", testData, tooltip);

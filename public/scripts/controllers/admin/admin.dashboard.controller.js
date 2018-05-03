@@ -4,7 +4,8 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 
   const self = this;
 
-// US state map
+// ------> UNTED STATES MAP
+  // tooltip html string
   function tooltip(n, d){
 		return "<h1>"+n+"</h1>"+
 			     "<h5>Money Generated: </td><td>$"+(d.totalSalesAmount)+".00</h5>"+
@@ -17,16 +18,17 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 	"CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN",
 	"WI", "MO", "AR", "OK", "KS", "LS", "VA"]
 		.forEach(function(d){
+      // data per dataset
 			let totalSalesAmount = Math.round(100*Math.random());
 			let	unitsSold = Math.round(100*Math.random());
-			    testData[d] = {
-            totalSalesAmount: d3.min([unitsSold]),
-            unitsSold: d3.max([totalSalesAmount]),
-					  avg: Math.round((totalSalesAmount)),
-            color: d3.interpolate("#00ff40", "#193fb3")(totalSalesAmount/100)
-          };
+	    testData[d] = {
+        totalSalesAmount: d3.min([unitsSold]),
+        unitsSold: d3.max([totalSalesAmount]),
+			  avg: Math.round((totalSalesAmount)),
+        color: d3.interpolate("#00ff40", "#193fb3")(totalSalesAmount/100)
+      };
 		});
-	/* draw states on id #statesvg */
+	/* draw states on #statesvg */
 	uStates.draw("#statesvg", testData, tooltip);
 
 

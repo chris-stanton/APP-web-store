@@ -37,7 +37,7 @@
   5. Server is listening on localhost port: 5000
 
 NOTE:
-  1. ``Procfile`` file tells Heroku Web Service's how to start the sever
+  1. ``Procfile`` file tells Heroku Web Service's how to start the ExpressJS sever
 
 
 ## MIT License:

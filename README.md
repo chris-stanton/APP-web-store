@@ -10,14 +10,16 @@
   1. HTML5
   2. CSS3 -> Flex-Box
   3. AngularJS
-  4. Alertify.js
-  5. NodeJS
-  6. ExpressJS
+  4. NodeJS
+  5. ExpressJS
+  6. Alertify.js
   7. Strip API
-  7. Nodemailer
-  9. Dotenv-node  
-  10. GIT / GitHub
-  11. Heroku / Heroku CLI
+  8. PayPal API
+  9. Nodemailer
+  10. PassportJS
+  11. Dotenv-node  
+  12. GIT / GitHub
+  13. Heroku / Heroku CLI
 
 
 ## Install App:

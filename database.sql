@@ -1,5 +1,5 @@
 
--- Copyright (c) 2018 Christopher J. Stanton 
+-- Copyright (c) 2018 Christopher J. Stanton
 
 -- product info and inventory
 CREATE TABLE inventory (
@@ -36,17 +36,17 @@ CREATE TABLE gallary (
 );
 INSERT INTO gallary (image, tooltip)
 VALUES ('./assets/images/gallary/1.jpg', 'Three thread tiger wrap, 5" cork grip'),
-        ('./assets/images/gallary/2.jpg', 'Three thread tiger wrap, split cork grip'),
-        ('./assets/images/gallary/3.jpg', 'Four thread tiger, 6`6" RodGeeks C266MLXF'),
-        ('./assets/images/gallary/4.jpg', 'Fully closed off wrap, 5" 3D printed grip'),
-        ('./assets/images/gallary/5.jpg', 'Three thread tiger wrap, White camo hydrodipped noodle blank, 3" cork grip'),
-        ('./assets/images/gallary/6.jpg', 'Three thread tiger, 6`6" RodGeeks C266MLXF'),
-        ('./assets/images/gallary/7.jpg', 'Three thread tiger wrap, Orange camo hydrodipped noodle blank, 3" cork grip'),
-        ('./assets/images/gallary/8.jpg', 'Razor pink spiral wrap'),
-        ('./assets/images/gallary/9.jpg', 'Green Bay Packers razor spiral wrap'),
-        ('./assets/images/gallary/10.jpg', 'Open water tiger wrapped rods'),
-        ('./assets/images/gallary/11.jpg', '3 matching MN Vikings tiger wrapped noodle rods'),
-        ('./assets/images/gallary/12.jpg', 'Four thread tiger with one off custom modlded fiberglass grip');
+       ('./assets/images/gallary/2.jpg', 'Three thread tiger wrap, split cork grip'),
+       ('./assets/images/gallary/3.jpg', 'Four thread tiger, 6`6" RodGeeks C266MLXF'),
+       ('./assets/images/gallary/4.jpg', 'Fully closed off wrap, 5" 3D printed grip'),
+       ('./assets/images/gallary/5.jpg', 'Three thread tiger wrap, White camo hydrodipped noodle blank, 3" cork grip'),
+       ('./assets/images/gallary/6.jpg', 'Three thread tiger, 6`6" RodGeeks C266MLXF'),
+       ('./assets/images/gallary/7.jpg', 'Three thread tiger wrap, Orange camo hydrodipped noodle blank, 3" cork grip'),
+       ('./assets/images/gallary/8.jpg', 'Razor pink spiral wrap'),
+       ('./assets/images/gallary/9.jpg', 'Green Bay Packers razor spiral wrap'),
+       ('./assets/images/gallary/10.jpg', 'Open water tiger wrapped rods'),
+       ('./assets/images/gallary/11.jpg', '3 matching MN Vikings tiger wrapped noodle rods'),
+       ('./assets/images/gallary/12.jpg', 'Four thread tiger with one off custom modlded fiberglass grip');
 
 
 

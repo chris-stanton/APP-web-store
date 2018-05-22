@@ -17,10 +17,11 @@
   8. PayPal API
   9. Nodemailer
   10. PassportJS
-  11. Dotenv-node  
-  12. GIT / GitHub
-  13. Heroku / Heroku CLI
-  14. Google Analytics
+  11. Passport Session
+  12. Dotenv-node  
+  13. GIT / GitHub
+  14. Heroku / Heroku CLI
+  15. Google Analytics
 
 
 ## Install App:

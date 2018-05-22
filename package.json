@@ -17,6 +17,7 @@
     "express": "4.15.2",
     "nodemailer": "4.4.2",
     "nodemailer-smtp-transport": "2.7.4",
+    "npm": "6.0.1",
     "pg": "6.1.4"
   },
   "author": "Christopher J Stanton",

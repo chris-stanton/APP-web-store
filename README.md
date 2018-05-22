@@ -20,6 +20,7 @@
   11. Dotenv-node  
   12. GIT / GitHub
   13. Heroku / Heroku CLI
+  14. Google Analytics
 
 
 ## Install App:

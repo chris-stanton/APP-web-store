@@ -1,5 +1,5 @@
 
-// Copyright (c) 2018 Christopher J. Stanton 
+// Copyright (c) 2018 Christopher J. Stanton
 myApp.controller('LandingController',['GallaryFactory', 'alertify', '$scope', function(GallaryFactory, alertify, $scope) {
 
   const self = this;

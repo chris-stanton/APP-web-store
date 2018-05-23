@@ -1,5 +1,5 @@
 
-// Copyright (c) 2018 Christopher J. Stanton 
+// Copyright (c) 2018 Christopher J. Stanton
 myApp.controller('PartsController',['StoreFactory', 'alertify', '$scope', function(StoreFactory, alertify, $scope) {
 
   const self = this;

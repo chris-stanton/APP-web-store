@@ -1,5 +1,5 @@
 
-// Copyright (c) 2018 Christopher J. Stanton 
+// Copyright (c) 2018 Christopher J. Stanton
 
 // requiring dependancies
 require('dotenv').config();
@@ -32,5 +32,5 @@ app.use('/sale', sale);
 
 // port listening
 app.listen(port, () => {
-    console.log('Listening on port: ', port);
+    console.log('App listening on port: ', port);
 });

@@ -40,6 +40,7 @@ myApp.controller('ContactController',['EmailFactory', 'alertify', '$scope', func
         // ----- if user selects OK ------ //
         self.buttonStatus = 'inactive';
         EmailFactory.sendMessage(contactMessage);
+        // db query goes here
       }, (buttonStatus) => {
         // ----- if user selects CANCEL ------ //
         self.buttonStatus = 'active';

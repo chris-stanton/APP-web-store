@@ -38,6 +38,7 @@ myApp.controller('ContactController',['EmailFactory', 'alertify', '$scope', func
     } else {
       alertify.confirm("click OK to email message to Chris", (buttonStatus) => {
         // ----- if user selects OK ------ //
+        // db quert gors here
         self.buttonStatus = 'inactive';
         EmailFactory.sendMessage(contactMessage);
       }, (buttonStatus) => {

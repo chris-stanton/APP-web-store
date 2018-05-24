@@ -33,7 +33,7 @@ CREATE TABLE gallary (
 	image VARCHAR(200) NOT NULL unique,
 	tooltip VARCHAR(500) NOT NULL,
 	active boolean DEFAULT true
-);
+);k
 INSERT INTO gallary (image, tooltip)
 VALUES ('./assets/images/gallary/1.jpg', 'Three thread tiger wrap, 5" cork grip'),
        ('./assets/images/gallary/2.jpg', 'Three thread tiger wrap, split cork grip'),

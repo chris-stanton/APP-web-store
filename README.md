@@ -4,6 +4,9 @@
 
 ## Description: Platform to sell custom made fishing rods and other rod building parts, materials and supplies. This app has a User side and and Admin side to display sales and inventory details.
 
+###### URL: https://chrisstantoncustomrods.herokuapp.com/
+NOTE: need to add postgreSQL DB in heroku
+
 
 ## Technologies Used:
 ###### NOTE: Refer to ``package.json`` file for the complete list of dependancies.

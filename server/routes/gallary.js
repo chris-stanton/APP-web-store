@@ -1,6 +1,7 @@
 
-// Copyright (c) 2018 Christopher J. Stanton 
+// Copyright (c) 2018 Christopher J. Stanton
 
+// requiring dependancies
 const router = require('express').Router();
 const pg = require('pg');
 const pool = require('../config/database.config');
@@ -14,7 +15,7 @@ router.get('/getGallary', function (req, res) {
           res.send(result.rows);
         })
         .catch(function (err) {
-          console.log('error on SELECT', err);
+          console.log('error getting photo gallary', err);
           res.sendStatus(500);
         });
     });

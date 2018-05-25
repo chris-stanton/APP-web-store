@@ -15,7 +15,7 @@ router.get('/getSaleItems', function (req, res) {
           res.send(result.rows);
         })
         .catch(function (err) {
-          console.log('error on SELECT', err);
+          console.log('error getting all sale items', err);
           res.sendStatus(500);
         });
     });

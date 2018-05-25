@@ -6,6 +6,11 @@ myApp.controller('AdmingallaryController',['GallaryFactory', 'alertify', '$scope
 
   self.message = "this worked";
 
+  // calls DB for all gallary pics
+  GallaryFactory.getGallary();
+  // DB return of all galary pics
+  self.gallaryInfo = GallaryFactory.gallary_pics;
+
 
 
 

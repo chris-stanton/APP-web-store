@@ -537,3 +537,26 @@ body {
   flex-direction: row;
   justify-content: center;
 }
+
+
+/* //////////// */
+/*    ADMIN     */
+/*   GALLERY    */
+/* //////////// */
+.flex-admin-gallary-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-bottom: 60px;
+}
+.flex-admin-gallary-container .flex-admin-gallaryIMG-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+  justify-content: center;
+}
+.flex-admin-gallaryIMG-container img {
+  height: 35vh;
+  margin: 5px;
+}

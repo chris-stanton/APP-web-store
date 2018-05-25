@@ -1,5 +1,23 @@
 
-<section>
-  <h1>This worked</h1>
-  {{agc.message}}
+<section class="flex-admin-gallary-container">
+  <!-- current image gallary pics -->
+  <section class="flex-admin-gallaryIMG-container">
+    <div ng-repeat="gallary in agc.gallaryInfo.list">
+      <img ng-src="{{gallary.image}}">
+    </div>
+  </section>
+
+  <!-- <form action="/gallary/upload" method="POST" enctype="multipart/form-data">
+    <div class="file-field input-field">
+      <div class="btn grey">
+        <span>File</span>
+        <input name="gallaryImg" type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+  </form> -->
+
 </section>

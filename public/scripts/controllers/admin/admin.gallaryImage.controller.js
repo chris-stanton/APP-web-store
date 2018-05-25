@@ -9,7 +9,8 @@ myApp.controller('AdmingallaryimageController',['GallaryFactory', 'alertify', '$
   let image_id = $routeParams.id;
 
   GallaryFactory.getImgDetails(image_id);
-  self.imageDetails = GallaryFactory.imageDetails;
+  self.imageDetails = GallaryFactory.imageDetails.id;
+
 
 
 

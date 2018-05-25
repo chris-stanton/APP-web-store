@@ -559,4 +559,8 @@ body {
 .flex-admin-gallaryIMG-container img {
   height: 35vh;
   margin: 5px;
+  box-shadow: 2px 2px 2px #777777;
+}
+.flex-admin-gallaryIMG-container img:hover {
+  background-color: black;
 }

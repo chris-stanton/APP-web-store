@@ -2,8 +2,9 @@
 <section class="flex-admin-gallary-container">
   <!-- current image gallary pics -->
   <section class="flex-admin-gallaryIMG-container">
-    <div ng-repeat="gallary in agc.gallaryInfo.list">
-      <a tooltips tooltip-template-url='./views/templates/tooltips/landing-tooltip.html'><img ng-src="{{gallary.image}}"></a>
+    <div ng-repeat="gallary in agc.gallaryInfo.list" ng-click="agc.getDetails(gallary)">
+      <!-- <a tooltips tooltip-template-url='./views/templates/tooltips/landing-tooltip.html'><img ng-src="{{gallary.image}}"></a> -->
+      <img ng-src="{{gallary.image}}">
     </div>
   </section>
 

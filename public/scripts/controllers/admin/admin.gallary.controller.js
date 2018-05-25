@@ -11,6 +11,11 @@ myApp.controller('AdmingallaryController',['GallaryFactory', 'alertify', '$scope
   // DB return of all galary pics
   self.gallaryInfo = GallaryFactory.gallary_pics;
 
+  self.getDetails = (image_id) => {
+    console.log(image_id);
+    alertify.confirm("GET DETAILS?");
+  };
+
 
 
 

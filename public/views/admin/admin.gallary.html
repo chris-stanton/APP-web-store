@@ -3,7 +3,7 @@
   <!-- current image gallary pics -->
   <section class="flex-admin-gallaryIMG-container">
     <div ng-repeat="gallary in agc.gallaryInfo.list">
-      <img ng-src="{{gallary.image}}">
+      <a tooltips tooltip-template-url='./views/templates/tooltips/landing-tooltip.html'><img ng-src="{{gallary.image}}"></a>
     </div>
   </section>
 

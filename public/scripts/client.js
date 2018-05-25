@@ -56,6 +56,11 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
       controller: 'AdmingallaryController',
       controllerAs: 'agc'
     })
+    .when ('/admin_gallaryImage/:id', {
+      templateUrl: './views/admin/admin.gallaryImage.html',
+      controller: 'AdmingallaryimageController',
+      controllerAs: 'agic'
+    })
     // else redirect
     .otherwise ({
         redirectTo: '/landing'

@@ -1,6 +1,6 @@
 
 // Copyright (c) 2018 Christopher J. Stanton
-myApp.controller('AdmingallaryController',['GallaryFactory', 'alertify', '$scope', function(GallaryFactory, alertify, $scope) {
+myApp.controller('AdmingallaryController',['GallaryFactory', 'alertify', '$scope', '$routeParams', '$location', function(GallaryFactory, alertify, $scope, $routeParams, $location) {
 
   const self = this;
 
@@ -12,8 +12,8 @@ myApp.controller('AdmingallaryController',['GallaryFactory', 'alertify', '$scope
   self.gallaryInfo = GallaryFactory.gallary_pics;
 
   self.getDetails = (image_id) => {
-    console.log(image_id);
-    alertify.confirm("GET DETAILS?");
+    $routeParams.image_id = image_id;
+    $location.path('admin_gallaryImage/'+$routeParams.image_id);
   };
 
 

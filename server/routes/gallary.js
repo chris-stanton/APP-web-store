@@ -58,6 +58,22 @@ router.get('/getGallary', function (req, res) {
     });
   });
 
+  router.get('/getImgDetails/:id', function (req, res) {
+    console.log(req.headers.image_id);
+    pool.connect()
+      .then(function (client) {
+        client.query("SELECT * FROM gallary WHERE id=$1", [req.headers.image_id])
+          .then(function (result) {
+            client.release();
+            res.send(result.rows);
+          })
+          .catch(function (err) {
+            console.log('error getting photo gallary', err);
+            res.sendStatus(500);
+          });
+      });
+    });
+
 // saving image files
 router.post('/upload', upload.single('gallaryImg'), function (req, res, next) {
   // req.files is array of `photos` files

@@ -51,6 +51,11 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
       controller: 'AdmindashboardController',
       controllerAs: 'adc'
     })
+    .when ('/admin_gallary', {
+      templateUrl: './views/admin/admin.gallary.html',
+      controller: 'AdmingallaryController',
+      controllerAs: 'agc'
+    })
     // else redirect
     .otherwise ({
         redirectTo: '/landing'

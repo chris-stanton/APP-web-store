@@ -4,12 +4,18 @@ myApp.controller('AdmingallaryimageController',['GallaryFactory', 'alertify', '$
 
   const self = this;
 
-  console.log('image_id: ' + $routeParams.id);
-
+  // image ID number passed on from admin gallary view
   let image_id = $routeParams.id;
 
+  // gets specific image by ID
   GallaryFactory.getImgDetails(image_id);
-  self.imageDetails = GallaryFactory.imageDetails.id;
+  // return of specific imge details from DB
+  self.imageDetails = GallaryFactory.imageDetails;
+
+  // updates image details
+  self.updateGallaryImage = (imageDetail) => {
+    console.log(imageDetail);
+  };
 
 
 

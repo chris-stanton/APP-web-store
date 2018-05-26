@@ -8,7 +8,7 @@ myApp.factory('GallaryFactory',['$http', '$location', 'alertify',function($http,
 
   // DB response containers
   let gallary_pics = { list:[] };
-  let imageDetails = { };
+  let imageDetails = { list:[] };
 
 
   // gets all active images
@@ -33,8 +33,7 @@ myApp.factory('GallaryFactory',['$http', '$location', 'alertify',function($http,
         image_id : image_id
       }
     }).then(function(response) {
-      imageDetails = response.data[0];
-      console.log(response.data[0]);
+      imageDetails.list = response.data;
     }).catch(function(error) {
       alertify.alert("Error with GET request to DB for image details");
         console.log('Error with GET request to DB for image details: ', error);

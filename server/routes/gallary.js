@@ -59,7 +59,6 @@ router.get('/getGallary', function (req, res) {
   });
 
   router.get('/getImgDetails/:id', function (req, res) {
-    console.log(req.headers.image_id);
     pool.connect()
       .then(function (client) {
         client.query("SELECT * FROM gallary WHERE id=$1", [req.headers.image_id])
@@ -77,11 +76,9 @@ router.get('/getGallary', function (req, res) {
 // saving image files
 router.post('/upload', upload.single('gallaryImg'), function (req, res, next) {
   // req.files is array of `photos` files
-  // req.body will contain the text fields, if there were any
-  console.log('req.file: ', req.file);
-  console.log('req.body: ', req.body);
-
+  // re-establishing correct file path
   let imageName = './assets/images/uploads/gallary/' + req.file.filename;
+  // tooltip value
   let tooltip = 'tooltip works';
 
   pool.connect()
@@ -94,7 +91,7 @@ router.post('/upload', upload.single('gallaryImg'), function (req, res, next) {
         res.send(result.rows);
       })
       .catch(function (err) {
-        console.log('error on SELECT', err);
+        console.log('Image could not and was not save to DB', err);
         res.sendStatus(500);
       });
     });//end of .then

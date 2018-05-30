@@ -1,18 +1,20 @@
 
 #animation-page.ng-enter {
-  transition: 0.5s ease-in all;
+  transition: 0.2s linear;
   transform: translateX(-100%);
-  opacity: 0;
+  /* opacity: 0; */
 }
-#animation-page.ng-enter #animation-page.ng-enter-active {
+#animation-page .fade.ng-enter-active {
   transform: translateX(0);
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 #animation-page.ng-leave {
-  transition: 0.5s ease-out all;
-  opacity: 1;
+  transition: 0.2s linear;
+  transform: translateX(0);
+  /* opacity: 1; */
 }
-#animation-page.ng-leave #animation-page.ng-leave-active {
-  opacity: 0;
+#animation-page .fade.ng-leave-active {
+  transform: translateX(-100%);
+  /* opacity: 0; */
 }

@@ -121,15 +121,18 @@
   .flex-resources-container .resources-heading {
     align-items: center;
   }
+  .flex-resources-container .resources-discription {
+    margin: 0px 15px;
+    padding: 0px;
+  }
   .flex-resources-container h1 {
     margin: 0px 10px;
     font-size: 28px;
     text-align: center;
   }
   .flex-resources-container p {
-    margin: 0px 20px;
+    margin: 0px 30px;
     font-size: 18px;
-    text-align: center;
   }
 
 

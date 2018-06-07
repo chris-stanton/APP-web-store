@@ -8,6 +8,8 @@
 }
 .landing-tooltip-container img {
   height: 50vh;
+  border: 1px solid #00c2ff;
+  border-radius: 3px;
 }
 .landing-tooltip-container h4 {
   font-size: 15px;

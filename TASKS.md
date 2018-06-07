@@ -30,12 +30,17 @@
 - [ ] research more resources online
 
 
+# Admin(top-level)
+- [ ] add Passport JS for authentication and authorization
+
+
 # Admin Dashboard
 - [ ] completed DS US map with analytics
 
 
 # Admin Gallary
 - [ ] add admin nav bar
+- [ ] route params controller to DB edit text
 - [ ] route params view add ability to upload image
 
 

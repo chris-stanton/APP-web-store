@@ -15,7 +15,7 @@ NOTE: need to add postgreSQL DB in heroku
   3. AngularJS
   4. NodeJS
   5. ExpressJS
-  6. Alertify.js
+  6. AlertifyJS
   7. Strip API
   8. PayPal API
   9. Nodemailer

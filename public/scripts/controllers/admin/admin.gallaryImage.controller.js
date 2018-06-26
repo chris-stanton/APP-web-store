@@ -3,6 +3,7 @@
 myApp.controller('AdmingallaryimageController',['GallaryFactory', 'alertify', '$scope', '$routeParams', '$location', function(GallaryFactory, alertify, $scope, $routeParams, $location) {
 
   const self = this;
+  self.buttonStatus = 'button-active';
 
   // image ID number passed on from admin gallary view
   let image_id = $routeParams.id;
@@ -13,8 +14,17 @@ myApp.controller('AdmingallaryimageController',['GallaryFactory', 'alertify', '$
   self.imageDetails = GallaryFactory.imageDetails;
 
   // updates image details
-  self.updateGallaryImage = (newImageDetail) => {
-    console.log(newImageDetail);
+  self.updateGallaryImage = (imageDetail) => {
+    console.log(imageDetail);
+    alertify.confirm("click OK to update gallary image details", () => {
+      // ----- if user selects OK ------ //
+      self.buttonStatus = 'button-inactive';
+    }, () => {
+      // ----- if user selects CANCEL ------ //
+      console.log('user clicked cancel');
+      self.buttonStatus = 'button-active';
+      alertify.log('The submission process has been cancelled')
+    }); // end alert dialog
   };
 
 

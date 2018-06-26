@@ -539,6 +539,7 @@ body {
 }
 
 
+
 /* //////////// */
 /*    ADMIN     */
 /*   GALLERY    */
@@ -565,6 +566,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
 }
+
 
 
 /* //////////// */
@@ -618,14 +620,22 @@ body {
   font-size: 14px;
   border-radius: 5px;
 }
-.flex-admin-gallaryDetail-container .update-button {
-  width: 83vw;
+.flex-admin-gallaryDetail-container .update-button-active {
   height: 8vh;
+  width: 75vw;
   background-color: #0f5ce0;
+  color: #ffffff;
   outline: none;
   border-radius: 5px;
-  color: #ffffff;
 }
-.flex-admin-gallaryDetail-container .update-button:hover {
+.flex-admin-gallaryDetail-container .update-button-inactive {
+ height: 8vh;
+ width: 75vw;
+ background-color: #87acff;
+ color: #ffffff;
+ outline: none;
+ border-radius: 5px;
+}
+.flex-admin-gallaryDetail-container .update-button-active:hover {
   cursor: pointer;
 }

@@ -14,5 +14,6 @@
       </p>
     </div>
   </div>
-  <button type="button" name="update" class="update-button" ng-click="agic.updateGallaryImage(imageDetail)"> Update </button>
+  <button type="button" ng-show="agic.buttonStatus !== 'button-inactive'" ng-click="agic.updateGallaryImage(imageDetail)" class="update-button-active"> Update </button>
+  <button type="button" ng-show="agic.buttonStatus === 'button-inactive'" class="update-button-inactive"><img ng-src="./assets/images/loaders/load.gif"></button>
 </section>

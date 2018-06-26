@@ -1,24 +1,10 @@
 
+<nav ng-include="'./views/templates/partials/admin-nav.html'"></nav>
 <section class="flex-admin-gallary-container">
   <!-- current image gallary pics -->
   <section class="flex-admin-gallaryIMG-container">
     <div ng-repeat="gallary in agc.gallaryInfo.list" ng-click="agc.getDetails(gallary.id)">
-      <!-- <a tooltips tooltip-template-url='./views/templates/tooltips/landing-tooltip.html'><img ng-src="{{gallary.image}}"></a> -->
-      <img ng-src="{{gallary.image}}">
+      <a tooltips tooltip-template="{{gallary.tooltip}}"><img ng-src="{{gallary.image}}"></a>
     </div>
   </section>
-
-  <!-- <form action="/gallary/upload" method="POST" enctype="multipart/form-data">
-    <div class="file-field input-field">
-      <div class="btn grey">
-        <span>File</span>
-        <input name="gallaryImg" type="file">
-      </div>
-      <div class="file-path-wrapper">
-        <input class="file-path validate" type="text">
-      </div>
-    </div>
-    <button type="submit" class="btn">Submit</button>
-  </form> -->
-
 </section>

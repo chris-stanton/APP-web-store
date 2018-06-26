@@ -1,9 +1,18 @@
 
+<nav ng-include="'./views/templates/partials/admin-nav.html'"></nav>
 <section class="flex-admin-gallaryDetail-container" ng-repeat="imageDetail in agic.imageDetails.list">
-  <!-- <section  class="flex-adminGallaryDetailIMG-container"> -->
-    <span><h4>Tooltip</h4><textarea name="tooltip">{{imageDetail.tooltip}}</textarea></span>
-    <img ng-src="{{imageDetail.image}}">
-  <!-- </section> -->
-  <button type="button" name="update" ng-click="agic.updateGallaryImage(agic.newImageDetail)"> Update </button>
-
+  <div class="flex-galleryEdit-container">
+    <div class="flex-galleryEdit-sub-column">
+      <img ng-src="{{imageDetail.image}}">
+    </div>
+    <div class="flex-galleryEdit-sub-column">
+      <textarea ng-model="imageDetail.tooltip"></textarea>
+      <p>
+        *IMPORTANT: Click the picture to upload/replace current image.
+        Text above is the image tooltip.
+        Updating shall only be done by authorized personal ONLY. Anyone else tampering/changing data will be terminated.
+      </p>
+    </div>
+  </div>
+  <button type="button" name="update" class="update-button" ng-click="agic.updateGallaryImage(imageDetail)"> Update </button>
 </section>

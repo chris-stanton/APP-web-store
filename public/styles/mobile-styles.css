@@ -139,5 +139,19 @@
 
 
 
+
+
+  /* ///////////// */
+  /*     ADMIN     */
+  /*  GALLARY IMG  */
+  /* ///////////// */
+  .flex-galleryEdit-container textarea {
+    width: 75vw;
+  }
+  .flex-galleryEdit-container p {
+    width: 75vw;
+  }
+
+
 /* end media query */
 }

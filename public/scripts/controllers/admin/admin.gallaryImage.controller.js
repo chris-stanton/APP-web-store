@@ -13,8 +13,8 @@ myApp.controller('AdmingallaryimageController',['GallaryFactory', 'alertify', '$
   self.imageDetails = GallaryFactory.imageDetails;
 
   // updates image details
-  self.updateGallaryImage = (imageDetail) => {
-    console.log(imageDetail);
+  self.updateGallaryImage = (newImageDetail) => {
+    console.log(newImageDetail);
   };
 
 

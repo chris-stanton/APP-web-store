@@ -68,6 +68,17 @@
 
 
 
+  /* //////////// */
+  /*     SHOP     */
+  /* //////////// */
+  .flex-shop-container .shop-item-container {
+    width: 40vw;
+    height: 28vh;
+    margin: 20px 10px;
+  }
+
+
+
 
 
 

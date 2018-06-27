@@ -14,17 +14,22 @@ myApp.controller('AdmingallaryimageController',['GallaryFactory', 'alertify', '$
   self.imageDetails = GallaryFactory.imageDetails;
 
   // updates image details
-  self.updateGallaryImage = (imageDetail) => {
+  self.updateGallaryImage = (imageDetail, buttonStatus) => {
     console.log(imageDetail);
-    alertify.confirm('Select OK to update image', function(buttonStatus){
-      self.buttonStatus = 'inactive';
-      alertify.success('Image Updated')
-    },
-    function(buttonStatus){
-      self.buttonStatus = 'active';
-      alertify.log('The submission process has been cancelled')
-    });
-  };
+    // self.buttonStatus = '';
+    alertify.confirm('Select OK to update image',
+      function(imageDetail){
+        self.buttonStatus = "inactive";
+        // needs to be fired with factory response
+        alertify.success('Image Updated');
+        // $location.path('/admin_gallary');
+      },
+      function(imageDetail){
+        self.buttonStatus = "active";
+        alertify.log('The submission process has been cancelled');
+      }
+    );
+  }; // end updateGallaryImage()
 
 
 

@@ -4,21 +4,21 @@
 <section class="flex-contact-container">
   <!-- <p>Please use this form as a way to have specific questions answered</p> -->
   <span>
-    <label>First Name:</label>
     <input type="text" name="firstname" ng-model="cc.contactMessage.firstName" placeholder="*required" ng-class="firstName">
+    <label>First Name</label>
   </span>
   <span>
-    <label>Last Name:</label>
     <input type="text" name="lastname" ng-model="cc.contactMessage.lastName" placeholder="*required" ng-class="lastName">
+    <label>Last Name</label>
   </span>
   <span>
-    <label>Email:</label>
     <input type="text" name="email" ng-model="cc.contactMessage.email" placeholder="*required" ng-class="email">
+    <label>Email</label>
   </span>
   <span>
-    <label>Message:</label>
     <textarea name="message" ng-model="cc.contactMessage.message" placeholder="*required" ng-class="message"></textarea>
+    <label>Message</label>
   </span>
   <button type="button" name="submit" ng-click="cc.sendMessage(cc.contactMessage)" ng-if="cc.buttonStatus === 'active'" class="button-active"> Submit </button>
-  <button type="button" ng-class="inactive" ng-if="cc.buttonStatus === 'inactive'" class="button-inactive"><img ng-src="./assets/images/loaders/load.gif"></button>
+  <button type="button" ng-class="inactive" ng-if="cc.buttonStatus === 'inactive'" class="button-inactive">Sending <img ng-src="./assets/images/loaders/load.gif"></button>
 </section>

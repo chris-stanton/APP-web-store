@@ -33,7 +33,8 @@ body {
 /* //////////////// */
 .background-red {
   background-color: rgba(255, 0, 0, 0.20);
-  border-color: #ff0303;
+  outline-style: outset;
+  outline-color: #ff0000;
 }
 .background-reset {
   background-color: none;
@@ -407,7 +408,7 @@ body {
   flex-direction: column;
   width: 100vw;
   align-items: center;
-  margin: 15px 0px;
+  margin: 45px 0px;
 }
 .flex-contact-container p {
   font-size: 23px;
@@ -423,11 +424,16 @@ body {
 }
 .flex-contact-container label {
   font-size: 20px;
+  font-style: italic;
   text-shadow: 1px 1px 1px #8b8b8b;
+  border-top: 1px solid #8b8b8b;
+  margin: 5px 0px;
 }
 .flex-contact-container input {
   height: 5vh;
   width: 70vw;
+  border: none;
+  font-size: 13px;
 }
 .flex-contact-container textarea {
   height: 15vh;
@@ -436,25 +442,26 @@ body {
 /* submit button */
  .button-active {
   height: 7vh;
-  width: 70vw;
+  width: 80vw;
   background-color: #0f5ce0;
   color: #ffffff;
   border-radius: 10px;
   outline: none;
   margin: 15px 0px 35px 0px;
+  cursor: pointer;
+  font-size: 16px;
 }
  .button-inactive {
   height: 7vh;
-  width: 70vw;
+  width: 80vw;
   background-color: #87acff;
   color: #ffffff;
   border-radius: 10px;
   outline: none;
   margin: 15px 0px 35px 0px;
+  font-size: 16px;
 }
- .button-active:hover {
-  cursor: pointer;
-}
+
 
 
 

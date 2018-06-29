@@ -2,9 +2,12 @@
 <nav ng-include="'./views/templates/partials/admin-nav.html'"></nav>
 <section class="flex-admin-gallaryDetail-container" ng-repeat="imageDetail in agic.imageDetails.list">
   <div class="flex-galleryEdit-container">
-    <div class="flex-galleryEdit-sub-column">
-      <img ng-src="{{imageDetail.image}}">
-    </div>
+    <a class="cursor-pointer"ng-click="">
+      <div class="flex-galleryEdit-sub-column img-column">
+        <img ng-src="{{imageDetail.image}}">
+        <span class="upload-button"> Upload </span>
+      </div>
+    </a>
     <div class="flex-galleryEdit-sub-column">
       <textarea ng-model="imageDetail.tooltip"></textarea>
       <p>

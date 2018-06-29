@@ -21,6 +21,10 @@ body {
   color: #ff0000;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 
 
 /* //////////////// */
@@ -594,14 +598,30 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.flex-galleryEdit-container img {
+.img-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-galleryEdit-sub-column img {
   height: 60vh;
   margin: 10px;
   border-radius: 5px;
 }
-.flex-galleryEdit-container img:hover {
-  cursor: pointer;
+.flex-galleryEdit-sub-column img:hover {
   opacity: 0.8;
+}
+.flex-galleryEdit-sub-column img:hover + span {
+  display: block;
+}
+.img-column span {
+  position: absolute;
+  color: #ffffff;
+  font-size: 19px;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
 }
 .flex-galleryEdit-container textarea {
   width: 40vw;

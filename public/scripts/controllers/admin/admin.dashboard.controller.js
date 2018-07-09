@@ -36,5 +36,4 @@ myApp.controller('AdmindashboardController',['EmailFactory', 'alertify', '$scope
 
 
 
-
 }]); // end myAPP.controller

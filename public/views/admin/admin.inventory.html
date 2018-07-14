@@ -1,6 +1,7 @@
 
 <nav ng-include="'./views/templates/partials/admin-nav.html'"></nav>
 <section class="flex-adminInventory-container">
+  <h2>Click item to update details</h2>
   <section class="flex-adminInventoryItem-container" ng-repeat="item_detail in aic.inventoryItems.list" ng-click="aic.specificInventoryItem(item_detail.id)">
     <a tooltips tooltip-template-url="../../../views/templates/tooltips/admin_inventory-tooltip.html"><img ng-src="../assets/images/sale/{{item_detail.img_0}}" class="adminInventory-view-image"></a>
     <div>

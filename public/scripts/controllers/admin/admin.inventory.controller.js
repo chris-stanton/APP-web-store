@@ -14,4 +14,6 @@ myApp.controller('AdmininventoryController',['StoreFactory', 'alertify', '$scope
 
 
 
+
+
 }]); // end myAPP.controller

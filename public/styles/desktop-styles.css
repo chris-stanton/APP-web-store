@@ -669,3 +669,28 @@ body {
  border-radius: 5px;
  font-size: 16px;
 }
+
+
+
+
+
+/* //////////// */
+/*    ADMIN     */
+/*   INVENTORY  */
+/* //////////// */
+.flex-adminInventory-container {
+  display: flex;
+  flex-direction: column;
+}
+.flex-adminInventory-container .flex-adminInventoryItem-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-adminInventory-container img {
+  display: flex;
+  height: 20vh;
+}
+.flex-adminInventory-container div {
+  display: flex;
+  flex-direction: column;
+}

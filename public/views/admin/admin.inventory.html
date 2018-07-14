@@ -1,10 +1,13 @@
 
 <nav ng-include="'./views/templates/partials/admin-nav.html'"></nav>
 <section class="flex-adminInventory-container">
-  <h2>Click item to update details</h2>
+  <div class="flex-adminInventory-addItem">
+    <h2>Click item to update details</h2>
+    <button type="button" name="button">+ Add Item</button>
+  </div>
   <section class="flex-adminInventoryItem-container" ng-repeat="item_detail in aic.inventoryItems.list" ng-click="aic.specificInventoryItem(item_detail.id)">
     <a tooltips tooltip-template-url="../../../views/templates/tooltips/admin_inventory-tooltip.html"><img ng-src="../assets/images/sale/{{item_detail.img_0}}" class="adminInventory-view-image"></a>
-    <div>
+    <div class="flex-adminInventory-pricing-container">
       <span><h4>Original Price: $</h4><p> {{item_detail.price}}</p></span>
       <span><h4>Sale Price: $</h4><p> {{item_detail.sale_price}}</p></span>
     </div>

@@ -685,17 +685,37 @@ body {
   justify-content: center;
   align-items: center;
 }
-.flex-adminInventory-container h2{
+.flex-adminInventory-container .flex-adminInventory-addItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-size: 22px;
   color: #959595;
   margin: 20px 0px;
+}
+.flex-adminInventory-container h2{
+  font-size: 18px;
+  color: #959595;
+  margin: 20px 20px;
+}
+.flex-adminInventory-container button{
+  width: 15vw;
+  margin: 0px 10px;
+  border-radius: 10px;
+  background-color: #0f5ce0;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+}
+.flex-adminInventory-container button:hover {
+  cursor: pointer;
 }
 .flex-adminInventory-container .flex-adminInventoryItem-container {
   display: flex;
   flex-direction: row;
   width: 70vw;
   padding: 20px;
-  border-bottom: 1px solid #b8b8b8;
+  border-top: 1px solid #b8b8b8;
   justify-content: center;
   align-items: center;
   text-shadow: 2px 2px 2px #cfcfcf;
@@ -713,7 +733,7 @@ body {
 .flex-adminInventory-container .adminInventory-view-image:hover {
   border: 1px solid #ffb801;
 }
-.flex-adminInventory-container div {
+.flex-adminInventory-container .flex-adminInventory-pricing-container {
   display: flex;
   flex-direction: column;
 }

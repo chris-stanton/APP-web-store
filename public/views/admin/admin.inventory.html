@@ -1,5 +1,14 @@
 
 <nav ng-include="'./views/templates/partials/admin-nav.html'"></nav>
-<section>
-
+<section class="flex-adminInventory-container">
+  <section class="flex-adminInventoryItem-container" ng-repeat="item_detail in aic.inventoryItems.list">
+    <img ng-src="../../assets/images/sale/{{item_detail.img_0}}">
+    <div>
+      <span><h6>Price: $</h6><p>{{item_detail.price}}</p></span>
+      <span><h6>Sale Price: $</h6><p>{{item_detail.sale_price}}</p></span>
+    </div>
+    <span><h6>Quantity: </h6><p>{{item_detail.available}}</p></span>
+    <span><h6>Inventory: </h6><p>{{item_detail.available}}</p></span>
+    <span><h6>Active: </h6><p>{{item_detail.available}}</p></span>
+  </section>
 </section>

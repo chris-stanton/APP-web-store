@@ -2,7 +2,7 @@
 <nav ng-include="'./views/templates/partials/admin-nav.html'"></nav>
 <section class="flex-adminInventory-container">
   <section class="flex-adminInventoryItem-container" ng-repeat="item_detail in aic.inventoryItems.list" ng-click="aic.specificInventoryItem(item_detail.id)">
-    <img ng-src="../../assets/images/sale/{{item_detail.img_0}}">
+    <a tooltips tooltip-template-url="../../../views/templates/tooltips/admin_inventory-tooltip.html"><img ng-src="../assets/images/sale/{{item_detail.img_0}}" class="adminInventory-view-image"></a>
     <div>
       <span><h4>Original Price: $</h4><p> {{item_detail.price}}</p></span>
       <span><h4>Sale Price: $</h4><p> {{item_detail.sale_price}}</p></span>

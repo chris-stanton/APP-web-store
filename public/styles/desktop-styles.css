@@ -698,7 +698,7 @@ body {
 .flex-adminInventory-container .flex-adminInventoryItem-container:hover {
   cursor: pointer;
 }
-.flex-adminInventory-container img {
+.flex-adminInventory-container .adminInventory-view-image {
   display: flex;
   height: 22vh;
   border-radius: 50%;
@@ -710,5 +710,5 @@ body {
 .flex-adminInventory-container span {
   display: flex;
   flex-direction: row;
-  margin: 0px 15px;
+  margin: 2px 10px 2px 10px;
 }

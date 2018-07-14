@@ -681,16 +681,34 @@ body {
 .flex-adminInventory-container {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
 }
 .flex-adminInventory-container .flex-adminInventoryItem-container {
   display: flex;
   flex-direction: row;
+  width: 70vw;
+  padding-bottom: 20px;
+  margin-top:20px;
+  border-bottom: 1px solid #b8b8b8;
+  justify-content: center;
+  align-items: center;
+}
+.flex-adminInventory-container .flex-adminInventoryItem-container:hover {
+  cursor: pointer;
 }
 .flex-adminInventory-container img {
   display: flex;
-  height: 20vh;
+  height: 22vh;
+  border-radius: 50%;
 }
 .flex-adminInventory-container div {
   display: flex;
   flex-direction: column;
+}
+.flex-adminInventory-container span {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 15px;
 }

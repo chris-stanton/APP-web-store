@@ -1,14 +1,14 @@
 
 <nav ng-include="'./views/templates/partials/admin-nav.html'"></nav>
 <section class="flex-adminInventory-container">
-  <section class="flex-adminInventoryItem-container" ng-repeat="item_detail in aic.inventoryItems.list">
+  <section class="flex-adminInventoryItem-container" ng-repeat="item_detail in aic.inventoryItems.list" ng-click="aic.specificInventoryItem(item_detail.id)">
     <img ng-src="../../assets/images/sale/{{item_detail.img_0}}">
     <div>
-      <span><h6>Price: $</h6><p>{{item_detail.price}}</p></span>
-      <span><h6>Sale Price: $</h6><p>{{item_detail.sale_price}}</p></span>
+      <span><h4>Original Price: $</h4><p> {{item_detail.price}}</p></span>
+      <span><h4>Sale Price: $</h4><p> {{item_detail.sale_price}}</p></span>
     </div>
-    <span><h6>Quantity: </h6><p>{{item_detail.available}}</p></span>
-    <span><h6>Inventory: </h6><p>{{item_detail.available}}</p></span>
-    <span><h6>Active: </h6><p>{{item_detail.available}}</p></span>
+    <span><h4>Quantity: </h4><p>{{item_detail.available}}</p></span>
+    <span><h4>Details: </h4><p>{{item_detail.details}}</p></span>
+    <span><h4>Active: </h4><p>{{item_detail.sale_active}}</p></span>
   </section>
 </section>

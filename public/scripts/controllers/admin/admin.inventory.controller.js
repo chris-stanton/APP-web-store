@@ -9,7 +9,10 @@ myApp.controller('AdmininventoryController',['StoreFactory', 'alertify', '$scope
   // return of all inventory items from DB
   self.inventoryItems = StoreFactory.inventoryItems;
 
-
+  self.specificInventoryItem = (item_detail_id)=> {
+    console.log("Item Detail ID: ",item_detail_id);
+    
+  }
 
 
 

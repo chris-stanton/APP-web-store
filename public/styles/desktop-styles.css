@@ -702,12 +702,16 @@ body {
 }
 .flex-adminInventory-container .flex-adminInventoryItem-container:hover {
   cursor: pointer;
-  background-color: #00d9ff;
+  background-color: #00c2ff;
 }
 .flex-adminInventory-container .adminInventory-view-image {
   display: flex;
   height: 22vh;
   border-radius: 50%;
+  border: 1px solid #00c2ff;
+}
+.flex-adminInventory-container .adminInventory-view-image:hover {
+  border: 1px solid #ffb801;
 }
 .flex-adminInventory-container div {
   display: flex;

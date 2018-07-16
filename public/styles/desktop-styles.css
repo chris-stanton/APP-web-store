@@ -704,7 +704,7 @@ body {
   border-radius: 10px;
   background-color: #0f5ce0;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   outline: none;
 }
 .flex-adminInventory-container button:hover {
@@ -726,7 +726,7 @@ body {
 }
 .flex-adminInventory-container .adminInventory-view-image {
   display: flex;
-  height: 22vh;
+  height: 20vh;
   border-radius: 50%;
   border: 1px solid #00c2ff;
 }
@@ -747,4 +747,45 @@ body {
 }
 .flex-adminInventory-container p {
   font-size: 18px;
+}
+
+
+/* //////////// */
+/*    ADMIN     */
+/*   INVENTORY  */
+/*     ITEM     */
+/* //////////// */
+.flex-adminInventoryItem-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-adminInventoryItem-container h6 {
+  font-size: 16px;
+  color: #808080;
+}
+.flex-adminInventoryItem-container .flex-adminInventoryItemDetails-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 10px;
+  justify-content: center;
+}
+.flex-adminInventoryItemDetails-container .flex-specificItemImages-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-specificItemImages-container span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px;
+}
+.flex-specificItemImages-container img {
+  /* display: flex; */
+  flex: 1;
+  align-content: space-between;
+  height: 35vh;
+  border-radius: 5px;
 }

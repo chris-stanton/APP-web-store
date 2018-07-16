@@ -40,7 +40,6 @@ router.get('/getSaleItems', function (req, res) {
 
   // gets specific product byID
   router.get('/getImageDetail/:id', function (req, res) {
-    console.log('Item ID: ', req.headers.item_detail_id);
     pool.connect()
       .then(function (client) {
         client.query("SELECT * FROM inventory WHERE id=$1", [req.headers.item_detail_id])

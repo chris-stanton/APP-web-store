@@ -61,11 +61,15 @@ myApp.config(['$routeProvider', 'tooltipsConfProvider', function($routeProvider,
       controller: 'AdmingallaryimageController',
       controllerAs: 'agic'
     })
-
     .when ('/admin_inventory', {
       templateUrl: './views/admin/admin.inventory.html',
       controller: 'AdmininventoryController',
       controllerAs: 'aic'
+    })
+    .when ('/admin_inventory_item/:id', {
+      templateUrl: './views/admin/admin.inventoryItem.html',
+      controller: 'AdmininventoryitemController',
+      controllerAs: 'aiic'
     })
     // else redirect
     .otherwise ({

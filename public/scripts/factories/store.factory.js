@@ -9,6 +9,7 @@ myApp.factory('StoreFactory',['$http', '$location', 'alertify',function($http, $
   // DB response containers
   let inventoryItems = { list:[] };
   let sale_items = { list:[] };
+  let specificItem = { list:[] };
 
 
   // gets all products
@@ -38,6 +39,22 @@ myApp.factory('StoreFactory',['$http', '$location', 'alertify',function($http, $
     });
   };
 
+  // gets all products where sale is active
+  function getImageDetail(item_detail_id) {
+    $http({
+      method: 'GET',
+      url: '/store/getImageDetail/' + item_detail_id,
+      headers: {
+        item_detail_id:item_detail_id
+      }
+    }).then(function(response) {
+      specificItem.list = response.data;
+    }).catch(function(error) {
+      alertify.alert("Error with GET request to DB for specific item");
+        console.log('Error with GET request to DB for speficic item: ', error);
+    });
+  };
+
 
 
 
@@ -47,15 +64,18 @@ myApp.factory('StoreFactory',['$http', '$location', 'alertify',function($http, $
 
   //public API
   return {
-    // gets alll inventory items from bd
+    // gets all inventory items from bd
     getAllInventroy : getAllInventroy,
     // return of all inventory intems from DB
     inventoryItems : inventoryItems,
     // DB call for all sale items
     getSaleItems : getSaleItems,
     // DB return for all sale items
-    sale_items : sale_items
-
+    sale_items : sale_items,
+    // gets product by ID
+    getImageDetail : getImageDetail,
+    // return of specifc product by ID
+    specificItem : specificItem
   };
 
 

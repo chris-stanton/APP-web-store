@@ -10,9 +10,10 @@ myApp.controller('AdmininventoryController',['StoreFactory', 'alertify', '$scope
   self.inventoryItems = StoreFactory.inventoryItems;
 
   self.specificInventoryItem = (item_detail_id)=> {
-    console.log("Item Detail ID: ",item_detail_id);
-    
-  }
+    $routeParams.item_detail_id = item_detail_id;
+    $location.path('/admin_inventory_item/'+$routeParams.item_detail_id);
+
+  };
 
 
 

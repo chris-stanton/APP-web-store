@@ -789,3 +789,15 @@ body {
   height: 35vh;
   border-radius: 5px;
 }
+.flex-adminInventoryItem-container .flex-specificItemSpec-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px 0px;
+}
+.flex-specificItemSpec-container span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

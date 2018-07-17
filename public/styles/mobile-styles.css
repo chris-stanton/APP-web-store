@@ -164,5 +164,67 @@
   }
 
 
+
+
+
+
+
+
+
+
+/* //////////// */
+/*    ADMIN     */
+/*   INVENTORY  */
+/*     ITEM     */
+/* //////////// */
+
+.flex-adminInventoryItemDetails-container .flex-specificItemImages-container {
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.flex-specificItemImages-container span {
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0px;
+}
+.flex-adminInventoryItem-container .flex-specificItemSpec-container {
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.flex-specificItemSpec-container span {
+  flex-direction: column;
+  margin: 6px 0px;
+}
+.flex-specificItemSpec-container select, input {
+  height: 4vh;
+  width: 70vw;
+}
+.flex-adminInventoryItem-container .flex-specificItemWraps-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+.flex-specificItemWraps-container span {
+  flex-direction: column;
+  margin: 10px 20px;
+}
+.flex-specificItemWraps-container textarea {
+  height: 10vh;
+  width: 70vw;
+}
+.flex-specificItemWraps-container select {
+  height: 4vh;
+  width: 70vw;
+}
+.flex-specificItemDetails-container textarea {
+  height: 10vh;
+  width: 70vw;
+}
+
+
+
+
+
+
 /* end media query */
 }

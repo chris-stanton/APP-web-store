@@ -759,27 +759,40 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
-.flex-adminInventoryItem-container h6 {
+.flex-adminInventoryItem-container .flex-specificItemStatus-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px 25px 0px;
+}
+.flex-specificItemStatus-container h6 {
   font-size: 16px;
   color: #808080;
+}
+.flex-specificItemStatus-container h5 {
+  margin-left: 50px;
+}
+.flex-specificItemStatus-container select {
+  margin-left: 10px;
 }
 .flex-adminInventoryItem-container .flex-adminInventoryItemDetails-container {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin-top: 10px;
   justify-content: center;
 }
 .flex-adminInventoryItemDetails-container .flex-specificItemImages-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 20px 0px;
 }
 .flex-specificItemImages-container span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80vw;
   margin: 0px 10px;
 }
 .flex-specificItemImages-container img {
@@ -793,11 +806,62 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 20px 0px;
   justify-content: center;
-  margin: 15px 0px;
 }
 .flex-specificItemSpec-container span {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 0px 20px;
+}
+.flex-specificItemSpec-container select, input {
+  height: 4vh;
+  width: 12vw;
+}
+.flex-adminInventoryItem-container .flex-specificItemWraps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.flex-specificItemWraps-container span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px 20px;
+}
+.flex-specificItemWraps-container textarea {
+  height: 4vh;
+  width: 40vw;
+}
+.flex-specificItemWraps-container select {
+  height: 4vh;
+  width: 6vw;
+}
+.flex-adminInventoryItemDetails-container button{
+  height: 7vh;
+  width: 90vw;
+  border-radius: 10px;
+  background-color: #0f5ce0;
+  color: #ffffff;
+  font-size: 18px;
+  outline: none;
+  margin: 20px 0px;
+}
+.flex-adminInventoryItem-container .flex-specificItemDetails-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-specificItemDetails-container span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80vw;
+  margin: 10px 20px;
+}
+.flex-specificItemDetails-container textarea {
+  height: 10vh;
+  width: 80vw;
 }

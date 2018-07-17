@@ -1,20 +1,84 @@
 
 <section class="flex-adminInventoryItem-container">
   <section class="flex-adminInventoryItemDetails-container" ng-repeat="item in aiic.specificItem.list">
-    <h6>ID: {{item.id}}</h6>
+
+    <div class="flex-specificItemStatus-container">
+      <h6>ID: {{item.id}}</h6>
+      <select class="" name="active">
+        <option value="TRUE">Active</option>
+        <option value="FALSE">In-Active</option>
+      </select>
+      <h5>Sale Status</h5>
+      <select class="" name="sale_active">
+        <option value="TRUE">Active</option>
+        <option value="FALSE">In-Active</option>
+      </select>
+    </div>
+
     <div class="flex-specificItemImages-container">
       <span><h5>Main Thumbnail</h5><img src="../../assets/images/sale/{{item.img_0}}"></span>
       <span><h5>Sub 1 Thumbnail</h5><img src="../../assets/images/sale/{{item.img_1}}"></span>
       <span><h5>Sub 2 Thumbnail</h5><img src="../../assets/images/sale/{{item.img_2}}"></span>
       <span><h5>Sub 3 Thumbnail</h5><img src="../../assets/images/sale/{{item.img_3}}"></span>
     </div>
+
     <div class="flex-specificItemSpec-container">
-      <span><h5>Blank</h5><input type="text" name="blank"></span>
-      <span><h5>Overall Length</h5><input type="text" name="length"></span>
-      <span><h5>Guides</h5><input type="text" name="guide"></span>
-      <span><h5>Handle</h5><input type="text" name="handle"></span>
-      <span><h5>Wraps</h5><input type="text" name="blank"></span>
+      <span>
+        <h5>Blank</h5>
+        <select name="blank">
+          <option value="UL Carbon"> UL Carbon </option>
+          <option value="ML Carbon"> ML Carbon </option>
+          <option value="MH Carbon"> MH Carbon </option>
+          <option value="H Carbon"> H Carbon </option>
+          <option value="Power Noodle UL">Power Noodle UL</option>
+          <option value="Power Noodle ML">Power Noodle ML</option>
+        </select>
+      </span>
+      <span>
+        <h5>Overall Length <em>(inches)</em></h5>
+        <input type="number" name="length" min="10" max="58">
+      </span>
+      <span>
+        <h5>Guides</h5>
+        <select name="guide">
+          <option value="Standard Black">Standard Black</option>
+          <option value="Standard Chrome">Standard Chrome</option>
+          <option value="Recoil Black">Recoil Black</option>
+          <option value="Recoil Chrome">Recoil Chrome</option>
+        </select>
+      </span>
+      <span>
+        <h5>Handle</h5>
+        <select name="handle">
+          <option value='5" Straight Cork'>5" Straight Cork</option>
+          <option value='5" Tapered Cork'>5" Tapered Cork</option>
+          <option value='3" Straight Cork'>3" Straight Cork</option>
+          <option value='3" Tapered Cork'>3" Tapered Cork</option>
+          <option value="Custom">Custom</option>
+        </select>
+      </span>
     </div>
+    <div class="flex-specificItemWraps-container">
+      <span>
+        <h5>Wraps</h5>
+        <textarea name="wraps">text AREA</textarea>
+      </span>
+      <span>
+        <h5>MSRP Price <em>(USD: $)</em></h5>
+        <input type="text" name="price">
+      </span>
+      <span>
+        <h5>Sale Price <em>(USD: $)</em></h5>
+        <input type="text" name="sale_price">
+      </span>
+    </div>
+    <div class="flex-specificItemDetails-container">
+      <span>
+        <h5>Details</h5>
+        <textarea name="details"></textarea>
+      </span>
+    </div>
+    <button type="button" name="button"> Update </button>
   </section>
 </section>
 

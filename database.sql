@@ -50,6 +50,7 @@ VALUES ('./assets/images/uploads/gallary/1.jpg', 'Three thread tiger wrap, 5" co
 
 
 
+
 -- Admin Authentication
 CREATE TABLE users (
 	id SERIAL PRIMARY KEY,

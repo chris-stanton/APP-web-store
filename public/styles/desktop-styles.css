@@ -788,6 +788,10 @@ body {
   justify-content: center;
   margin: 20px 0px;
 }
+.flex-adminInventoryItemDetails-container .flex-specificItemImages-container img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
 .flex-specificItemImages-container span {
   display: flex;
   flex-direction: column;

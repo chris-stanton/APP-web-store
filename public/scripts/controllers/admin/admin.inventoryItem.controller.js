@@ -5,7 +5,6 @@ myApp.controller('AdmininventoryitemController',['StoreFactory', 'alertify', '$s
   self.buttonStatus = 'active';
 
   let item_detail_id = $routeParams.id;
-  console.log(item_detail_id);
 
   // gets specific product by id on int
   StoreFactory.getImageDetail(item_detail_id);

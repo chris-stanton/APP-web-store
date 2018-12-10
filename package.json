@@ -12,18 +12,18 @@
     "test": "nodemon app.js"
   },
   "dependencies": {
-    "alertify.js": "^1.0.12",
-    "angular": "^1.7.5",
-    "angular-animate": "^1.7.5",
-    "angular-route": "^1.7.5",
-    "angular-tooltips": "^1.2.2",
-    "body-parser": "^1.18.3",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
-    "multer": "^1.4.1",
-    "nodemailer": "^4.7.0",
-    "nodemailer-smtp-transport": "^2.7.4",
-    "pg": "^7.7.1"
+    "alertify.js": "1.0.12",
+    "angular": "1.7.5",
+    "angular-animate": "1.7.5",
+    "angular-route": "1.7.5",
+    "angular-tooltips": "1.2.2",
+    "body-parser": "1.18.3",
+    "dotenv": "6.2.0",
+    "express": "4.16.4",
+    "multer": "1.4.1",
+    "nodemailer": "4.7.0",
+    "nodemailer-smtp-transport": "2.7.4",
+    "pg": "7.7.1"
   },
   "author": "Christopher J Stanton",
   "license": "MIT"
